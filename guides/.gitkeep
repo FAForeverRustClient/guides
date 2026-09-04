@@ -1,0 +1,3 @@
+Guides written in the FAF client land here as <catalogue-id>.md when a
+maintainer accepts them. A guide that lives on YouTube or the wiki is a `url`
+in catalogue.json and no file.

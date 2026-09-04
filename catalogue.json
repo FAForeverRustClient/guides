@@ -1,0 +1,51 @@
+{
+  "//": "The FAF training catalogue. Read by the FAF client's Training tab.",
+  "//editing": [
+    "Accepting a submission from the client writes this file, so keep it valid JSON.",
+    "Every field of a resource is optional except id and title.",
+    "An id is a file name and the key `related` points at: lowercase, hyphens."
+  ],
+  "//format": "docs/training-catalogue.md in FAForeverRustClient/FAForeverRustClient",
+  "//trainers": [
+    "The training team, shown as tiles in the client.",
+    "Only `name` is required. `accepting` defaults to true.",
+    "`fafId` is worth chasing: with it the tile opens the FAF player card,",
+    "resolves the real rating and avatar, and can be messaged from the client."
+  ],
+  "links": {
+    "contributeCategory": 4,
+    "contributeUrl": "https://forum.faforever.com/category/4/i-need-help",
+    "discordUrl": "https://discord.gg/By9tNUAq8B",
+    "replayReviewCategory": 4,
+    "replayReviewUrl": "https://forum.faforever.com/category/4/i-need-help",
+    "wikiUrl": "https://wiki.faforever.com"
+  },
+  "resources": [
+    {
+      "id": "faf-wiki",
+      "kind": "guide",
+      "summary": "The community's written reference: game mechanics, unit data, client and setup pages.",
+      "title": "The FAF wiki",
+      "topics": [
+        "strategy",
+        "interface"
+      ],
+      "url": "https://wiki.faforever.com"
+    },
+    {
+      "id": "faf-forum-help",
+      "kind": "community",
+      "summary": "The forum category where players ask for advice and post replays for review.",
+      "title": "I need help",
+      "url": "https://forum.faforever.com/category/4/i-need-help"
+    },
+    {
+      "id": "faf-forum-support",
+      "kind": "community",
+      "summary": "For problems with the client, an install or an account rather than with playing.",
+      "title": "Client and account support",
+      "url": "https://forum.faforever.com/category/9/faf-support-client-and-account-issues"
+    }
+  ],
+  "trainers": []
+}
