@@ -53,28 +53,98 @@
       "summary": "For problems with the client, an install or an account rather than with playing.",
       "title": "Client and account support",
       "url": "https://forum.faforever.com/category/9/faf-support-client-and-account-issues"
-    },
-    {
-      "approvedBy": "",
-      "author": "Seraphim-Noob",
-      "durationMinutes": null,
-      "factions": [],
-      "gameModes": [],
-      "id": "hi",
-      "imageUrl": "",
-      "kind": "guide",
-      "level": null,
-      "maps": [],
-      "ratingMax": null,
-      "ratingMin": null,
-      "related": [],
-      "summary": "",
-      "title": "hi",
-      "topics": [],
-      "tutorialId": null,
-      "updatedAt": "",
-      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/HEAD/guides/hi.md"
     }
   ],
-  "trainers": []
+  "trainers": [
+    {
+      "fafId": 362817,
+      "name": "Strydxr",
+      "note": "Focuses on the organizing of the Team",
+      "role": "Team Lead"
+    },
+    {
+      "fafId": 62213,
+      "name": "FTXCommando",
+      "note": "Specializes in teamgames",
+      "role": "Veteran Trainer",
+      "topics": [
+        "teamplay"
+      ]
+    },
+    {
+      "fafId": 222894,
+      "name": "Sladow-Noob",
+      "note": "Teaches any ranking in any scenario except Seton's",
+      "role": "Veteran Trainer"
+    },
+    {
+      "fafId": 294979,
+      "name": "Judoka",
+      "note": "Focuses on training all ratings in all gamemodes",
+      "role": "Experienced Trainer"
+    },
+    {
+      "fafId": 42707,
+      "maps": [
+        "Setons Clutch"
+      ],
+      "name": "Seraphim-Noob",
+      "note": "Specialized on Setons Clutch",
+      "role": "Experienced Trainer"
+    },
+    {
+      "fafId": 195232,
+      "gameModes": [
+        "1v1"
+      ],
+      "name": "Paradox_of_war",
+      "note": "Specializes in 1v1 up to 1800 rating",
+      "ratingMax": 1800,
+      "role": "Experienced Trainer"
+    },
+    {
+      "fafId": 459931,
+      "name": "Mui",
+      "note": "Specialized on Mapgen and Teamgames",
+      "role": "Trainer",
+      "topics": [
+        "teamplay"
+      ]
+    },
+    {
+      "fafId": 373906,
+      "maps": [
+        "Dual Gap"
+      ],
+      "name": "GodsMistake",
+      "note": "Specialized on Dual Gap",
+      "role": "Trainer"
+    },
+    {
+      "fafId": 195400,
+      "name": "WilloWisppsi",
+      "note": "Specialized on Mapgen and Teamgames",
+      "role": "Trainer",
+      "topics": [
+        "teamplay"
+      ]
+    },
+    {
+      "fafId": 373105,
+      "gameModes": [
+        "1v1"
+      ],
+      "name": "Grimplex",
+      "note": "Most competent in 1v1, 1800+ 1v1 rating required",
+      "ratingMin": 1800,
+      "role": "Trainer"
+    },
+    {
+      "fafId": 164973,
+      "name": "Maudlin27",
+      "note": "Replay reviews for Vs AI and sub-1k TMM games",
+      "ratingMax": 1000,
+      "role": "Trainer"
+    }
+  ]
 }
