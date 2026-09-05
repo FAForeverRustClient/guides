@@ -6,6 +6,13 @@
     "An id is a file name and the key `related` points at: lowercase, hyphens."
   ],
   "//format": "docs/training-catalogue.md in FAForeverRustClient/FAForeverRustClient",
+  "//links": [
+    "replayReviewChannel is where a replay review request is pasted, as a",
+    "https://discord.com/channels/<guild>/<channel> address. Discord's app follows",
+    "one straight to the channel and the client copies the request on the way out,",
+    "so the player lands in the right place with one paste left. Turn on Developer",
+    "Mode in Discord and use Copy Link on the channel. Empty falls back to discordUrl."
+  ],
   "//trainers": [
     "The training team, shown as tiles in the client.",
     "Only `name` is required. `accepting` defaults to true.",
@@ -17,6 +24,7 @@
     "contributeUrl": "https://forum.faforever.com/category/4/i-need-help",
     "discordUrl": "https://discord.gg/By9tNUAq8B",
     "replayReviewCategory": 4,
+    "replayReviewChannel": "",
     "replayReviewUrl": "https://forum.faforever.com/category/4/i-need-help",
     "wikiUrl": "https://wiki.faforever.com"
   },

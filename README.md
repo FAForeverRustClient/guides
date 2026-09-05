@@ -32,6 +32,38 @@ You are never asked for an id. It is derived from the title, because an id is a
 file name and the key other entries point at, which is not a thing to make a
 submitter invent.
 
+## Adding a trainer
+
+Trainers are the `trainers` array in `catalogue.json`. There is no form and no
+approval step: someone with commit access adds an entry, and it is a tile in
+every client on the next load.
+
+```json
+{
+  "name": "Seraphim-Noob",
+  "fafId": 101,
+  "role": "Personal trainer",
+  "topics": ["economy", "buildOrder"],
+  "gameModes": ["1v1", "2v2"],
+  "ratingMin": 1000,
+  "ratingMax": 1800,
+  "languages": ["English", "Deutsch"],
+  "discord": "seraphimnoob",
+  "note": "Happy to look at ladder games.",
+  "accepting": true
+}
+```
+
+Only `name` is required, and `accepting` defaults to `true`. Someone who steps
+back should get `"accepting": false` rather than be deleted: the tile stays and
+is marked, because "this person coaches, just not right now" is more useful
+than a name that vanished.
+
+`fafId` is the one worth chasing. With it the tile stops being a string: the
+FAF player card opens from it, the real rating and avatar resolve, and the
+trainer can be messaged from inside the client. Find it in the client by
+opening their player card, or on `https://api.faforever.com/data/player?filter=login==<name>`.
+
 ## What makes a good submission
 
 The tags matter as much as the content, because they are what lets the right
