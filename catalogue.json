@@ -16,9 +16,14 @@
   "//resources": [
     "Guides, videos, build orders and channels somebody vouched for.",
     "Destinations belong in `links` rather than here.",
-    "A build order written as text lives in guides/ and is linked by its",
-    "github.com/.../blob/ address, which renders. The raw address serves",
-    "text/plain, and the client opens a url in the reader's browser."
+    "A build order written as text lives in guides/ and is linked by its raw",
+    "address: the client fetches that itself and renders it in the tab. The",
+    "button that opens a browser instead rewrites it to the github.com/blob",
+    "address, which is the rendered one.",
+    "`custom` as a game mode means a game outside the matchmaker. It resolves",
+    "to the global leaderboard, which is the rating such material is written",
+    "for. Pair it with a team size so the entry still matches a player whose",
+    "recent games were that size."
   ],
   "//trainers": [
     "The training team, shown as tiles in the client.",
@@ -165,6 +170,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-air-eco",
@@ -189,6 +195,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-air-aggressive",
@@ -214,6 +221,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-air-strat-rush",
@@ -240,6 +248,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-beach-meta",
@@ -262,6 +271,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-beach-eco",
@@ -285,6 +295,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-north-rock",
@@ -304,6 +315,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "seraphim-setons-front",
@@ -544,6 +556,7 @@
     {
       "author": "Seraphim-Noob",
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "channel-seraphim-com",
@@ -578,6 +591,7 @@
     },
     {
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "channel-yudi1260",
@@ -595,6 +609,7 @@
     },
     {
       "gameModes": [
+        "custom",
         "4v4"
       ],
       "id": "channel-foleybts",
@@ -670,7 +685,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-eye-of-the-storm.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-eye-of-the-storm.md"
     },
     {
       "author": "Sladow-Noob",
@@ -688,7 +703,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-tag-craftious-maximus.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-tag-craftious-maximus.md"
     },
     {
       "author": "Sladow-Noob",
@@ -709,7 +724,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-cadmium-green.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-cadmium-green.md"
     },
     {
       "author": "Sladow-Noob",
@@ -727,7 +742,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-adaptive-point-of-reach.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-adaptive-point-of-reach.md"
     },
     {
       "author": "Sladow-Noob",
@@ -745,7 +760,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-desert-arena.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-desert-arena.md"
     },
     {
       "author": "Sladow-Noob",
@@ -763,7 +778,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-stickleback-ridge.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-stickleback-ridge.md"
     },
     {
       "author": "Sladow-Noob",
@@ -781,7 +796,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-hargreven.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-hargreven.md"
     },
     {
       "author": "Sladow-Noob",
@@ -799,7 +814,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-red-rocks.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-red-rocks.md"
     },
     {
       "author": "Sladow-Noob",
@@ -817,7 +832,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-serenity-desert-small.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-serenity-desert-small.md"
     },
     {
       "author": "Sladow-Noob",
@@ -835,7 +850,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-turtle-rocks.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-turtle-rocks.md"
     },
     {
       "author": "Sladow-Noob",
@@ -853,7 +868,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-crimson-feud.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-crimson-feud.md"
     },
     {
       "author": "Sladow-Noob",
@@ -871,7 +886,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-crossfire-channel.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-crossfire-channel.md"
     },
     {
       "author": "Sladow-Noob",
@@ -889,7 +904,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-arcane.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-arcane.md"
     },
     {
       "author": "Sladow-Noob",
@@ -907,7 +922,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-bermuda-locket.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-bermuda-locket.md"
     },
     {
       "author": "Sladow-Noob",
@@ -925,7 +940,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-syrtis-major.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-syrtis-major.md"
     },
     {
       "author": "Sladow-Noob",
@@ -943,7 +958,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-diversity.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-diversity.md"
     },
     {
       "author": "Sladow-Noob",
@@ -967,7 +982,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-the-cold-place.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-the-cold-place.md"
     },
     {
       "author": "Sladow-Noob",
@@ -985,7 +1000,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-zeuthea-valley.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-zeuthea-valley.md"
     },
     {
       "author": "Sladow-Noob",
@@ -1003,7 +1018,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-esgaroths-ruins.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-esgaroths-ruins.md"
     },
     {
       "author": "Sladow-Noob",
@@ -1021,7 +1036,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-floralis.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-floralis.md"
     },
     {
       "author": "Sladow-Noob",
@@ -1039,7 +1054,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://github.com/FAForeverRustClient/guides/blob/main/guides/sladow-1v1-frithen.md"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-frithen.md"
     }
   ],
   "trainers": [
