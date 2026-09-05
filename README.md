@@ -8,7 +8,7 @@ trainer or changing the training Discord invite is a commit, and it reaches
 every client on its next load.
 
 The client reads it from
-`https://raw.githubusercontent.com/FAForeverRustClient/guides/HEAD/catalogue.json`.
+`https://raw.githubusercontent.com/FAForeverRustClient/guides/main/catalogue.json`.
 
 ---
 
