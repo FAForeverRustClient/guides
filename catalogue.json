@@ -24,7 +24,7 @@
     "contributeUrl": "https://forum.faforever.com/category/4/i-need-help",
     "discordUrl": "https://discord.gg/By9tNUAq8B",
     "replayReviewCategory": 4,
-    "replayReviewChannel": "",
+    "replayReviewChannel": "https://discord.com/channels/197033481883222026/1094904988788080641",
     "replayReviewUrl": "https://forum.faforever.com/category/4/i-need-help",
     "wikiUrl": "https://wiki.faforever.com"
   },
@@ -90,7 +90,10 @@
       ],
       "name": "Seraphim-Noob",
       "note": "Specialized on Setons Clutch",
-      "role": "Experienced Trainer"
+      "role": "Experienced Trainer",
+      "topics": [
+        "teamplay"
+      ]
     },
     {
       "fafId": 195232,
@@ -118,7 +121,10 @@
       ],
       "name": "GodsMistake",
       "note": "Specialized on Dual Gap",
-      "role": "Trainer"
+      "role": "Trainer",
+      "topics": [
+        "teamplay"
+      ]
     },
     {
       "fafId": 195400,
