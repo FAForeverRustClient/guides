@@ -59,10 +59,13 @@ Declining takes a reason from a fixed set plus an optional note, and both go
 into the issue where the author reads them. That is the part that decides
 whether they submit again.
 
-`validate.yml` checks every pull request: the document parses, ids are unique,
-`related` resolves, and links are `https://`. The client is deliberately
-forgiving at runtime (a typo in a field name loses that field rather than
-sinking the whole document), which is right for a player and wrong for a review.
+A submission is an **issue**, and accepting it commits straight to `main`; there
+is no pull request in the loop, because what needed reviewing was the guide and
+that happened on the issue. `validate.yml` runs on every push and checks the
+things a reader would not notice: the document parses, ids are unique, `related`
+resolves, and links are `https://`. The client is deliberately forgiving at
+runtime (a typo in a field name loses that field rather than sinking the whole
+document), which is right for a player and wrong here.
 
 ## Layout
 
