@@ -19,13 +19,18 @@ title, the one-line description and the tags, then either write the guide there
 or link to a video or page. The client opens an issue here with everything a
 maintainer needs, so accepting it is one press.
 
-**By hand.** Open an issue with the *Training submission* template. It contains
-the same block the client writes; fill in the values and a maintainer can accept
-it the same way. An issue without that block is still read and still answered,
-it just has to be turned into a catalogue entry by hand first.
+**By hand.** Open an issue with the *Training submission* form. It asks for the
+same things the client does, and GitHub renders your answers into the shape a
+maintainer can accept in one press. An issue opened without the form is still
+read and still answered, it just has to be turned into a catalogue entry by hand
+first.
 
-Either way the issue needs the `training-submission` label, which both paths
-add for you.
+Either way the issue gets the `training-submission` label, which both paths add
+for you.
+
+You are never asked for an id. It is derived from the title, because an id is a
+file name and the key other entries point at, which is not a thing to make a
+submitter invent.
 
 ## What makes a good submission
 
@@ -72,7 +77,9 @@ guide that lives on YouTube or the wiki is just a `url` and no file.
 
 ## Format
 
-Every field, with its meaning and its allowed values, is documented in
+`catalogue.json` is what the client reads; the issue form is how a submission
+gets into it. Every field, with its meaning and its allowed values, is
+documented in
 [`docs/training-catalogue.md`](https://github.com/FAForeverRustClient/FAForeverRustClient/blob/develop/docs/training-catalogue.md)
 in the client repository, next to the code that reads it.
 

@@ -1,0 +1,133 @@
+name: Training submission
+description: Add a guide, video or build order to the FAF training catalogue
+title: "Training submission: "
+labels: ["training-submission"]
+
+# The field labels below are a contract with the FAF client: it writes and reads
+# submissions using exactly these headings (see `mod field` in
+# crates/faf-domain/src/state/guides.rs). Renaming one here without renaming it
+# there silently drops that answer from every submission opened in a browser.
+#
+# There is no id field on purpose. An id is a file name and the key other
+# entries point at, so it is derived from the issue title rather than asked for.
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submitting from the FAF client fills this in for you: **Training tab →
+        Contribute**. This form is the same thing by hand.
+
+        Put the guide's name in the issue title, after `Training submission:`.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One line. This is what a card in the library shows under the title, and it decides whether anybody opens the guide.
+      placeholder: Four mexes, then land. What to do differently in the middle.
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Leave empty if you are writing the guide below.
+      placeholder: https://www.youtube.com/watch?v=...
+
+  - type: textarea
+    id: guide
+    attributes:
+      label: Guide
+      description: Markdown. Headings, lists, code blocks and links all work. Leave empty if you linked to it above.
+      placeholder: |
+        ## Opening
+
+        Four mexes, then a land factory.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Guide
+        - Video
+        - Build order
+        - Replay analysis
+        - Community
+      default: 0
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      description: "Any" is a real answer, not a missing one.
+      options:
+        - Any
+        - Beginner
+        - Intermediate
+        - Advanced
+      default: 0
+
+  - type: checkboxes
+    id: topics
+    attributes:
+      label: Topics
+      description: What the guide is actually about. Two or three is usually right; ticking everything helps nobody find it.
+      options:
+        - label: Economy
+        - label: Build orders
+        - label: Micro
+        - label: Strategy
+        - label: Army composition
+        - label: Map control
+        - label: Scouting
+        - label: Factions
+        - label: Teamplay
+        - label: Interface
+
+  - type: input
+    id: modes
+    attributes:
+      label: Game modes
+      description: Comma separated. Leave empty when the guide is about the game rather than about one queue, which is an answer and not a gap.
+      placeholder: 1v1, 4v4
+
+  - type: input
+    id: maps
+    attributes:
+      label: Maps
+      description: Comma separated, written as a player writes them. Leave empty when it is not about particular maps.
+      placeholder: Setons Clutch, Astro Crater
+
+  - type: checkboxes
+    id: factions
+    attributes:
+      label: Factions
+      description: Only when the guide is faction specific.
+      options:
+        - label: UEF
+        - label: Aeon
+        - label: Cybran
+        - label: Seraphim
+
+  - type: input
+    id: rating-from
+    attributes:
+      label: Rating from
+      description: Who is this for? An empty bound is open, and a guide aimed at nobody in particular is recommended to nobody in particular.
+      placeholder: "800"
+
+  - type: input
+    id: rating-to
+    attributes:
+      label: Rating to
+      placeholder: "1200"
+
+  - type: input
+    id: author
+    attributes:
+      label: FAF name
+      description: Who the catalogue credits. Your GitHub account is already on the issue; this is the name players will see.
+      placeholder: Seraphim-Noob
