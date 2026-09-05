@@ -53,6 +53,27 @@
       "summary": "For problems with the client, an install or an account rather than with playing.",
       "title": "Client and account support",
       "url": "https://forum.faforever.com/category/9/faf-support-client-and-account-issues"
+    },
+    {
+      "approvedBy": "",
+      "author": "Seraphim-Noob",
+      "durationMinutes": null,
+      "factions": [],
+      "gameModes": [],
+      "id": "test",
+      "imageUrl": "",
+      "kind": "guide",
+      "level": null,
+      "maps": [],
+      "ratingMax": null,
+      "ratingMin": null,
+      "related": [],
+      "summary": "",
+      "title": "test",
+      "topics": [],
+      "tutorialId": null,
+      "updatedAt": "",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/HEAD/guides/test.md"
     }
   ],
   "trainers": [
