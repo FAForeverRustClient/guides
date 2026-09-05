@@ -8,7 +8,7 @@
 //
 // So this is the strict half. No dependencies: node and the standard library.
 
-import { readFile, access } from "node:fs/promises";
+import { readFile, writeFile, access } from "node:fs/promises";
 
 const KINDS = ["video", "guide", "buildOrder", "replayAnalysis", "lesson", "community"];
 const LEVELS = ["beginner", "intermediate", "advanced"];
@@ -55,10 +55,18 @@ function sortKeys(value) {
 
 const reserialised = `${JSON.stringify(sortKeys(document), null, 2)}\n`;
 if (reserialised !== raw) {
-  complain(
-    "catalogue.json",
-    "is not in the shape the client writes. Run `node .github/validate.mjs --write` and commit the result, so the next accepted submission is a one-line diff",
-  );
+  // The message below has always named `--write`, so it had better exist. It
+  // only ever reshapes: the parsed document is written back unchanged, which is
+  // why it is safe to run on a file you are in the middle of editing.
+  if (process.argv.includes("--write")) {
+    await writeFile("catalogue.json", reserialised);
+    console.log("catalogue.json rewritten in the shape the client writes.");
+  } else {
+    complain(
+      "catalogue.json",
+      "is not in the shape the client writes. Run `node .github/validate.mjs --write` and commit the result, so the next accepted submission is a one-line diff",
+    );
+  }
 }
 
 const resources = document.resources ?? [];
@@ -136,10 +144,20 @@ for (const [index, trainer] of (document.trainers ?? []).entries()) {
 }
 
 // A guide the catalogue points at should exist in this repository.
+//
+// Both addresses of the same file are recognised. A guide is linked by its
+// `blob` address, because that is the one GitHub renders and the client hands a
+// url to the reader's browser rather than reading it itself; `raw` serves
+// text/plain, which is a build order as a wall of monospace. The raw form is
+// still matched here so an older entry keeps being checked.
+const IN_REPO = [
+  /^https:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[^/]+\/(.+)$/,
+  /^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/[^/]+\/(.+)$/,
+];
+
 for (const resource of resources) {
-  const local = /^https:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[^/]+\/(.+)$/.exec(
-    resource?.url ?? "",
-  );
+  const url = resource?.url ?? "";
+  const local = IN_REPO.map((pattern) => pattern.exec(url)).find(Boolean);
   if (!local) continue;
   try {
     await access(local[1]);

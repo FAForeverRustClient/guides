@@ -1,0 +1,4 @@
+# The client writes this repository with LF, and the validator compares the
+# catalogue byte for byte against what the client would write. A checkout that
+# turned those into CRLF would fail that check on Windows and nowhere else.
+* text=auto eol=lf
