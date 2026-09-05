@@ -58,45 +58,45 @@
   "trainers": [
     {
       "fafId": 362817,
+      "focus": "Runs the training team",
       "name": "Strydxr",
       "note": "Focuses on the organizing of the Team",
       "role": "Team Lead"
     },
     {
       "fafId": 62213,
+      "focus": "Team games",
       "name": "FTXCommando",
       "note": "Specializes in teamgames",
-      "role": "Veteran Trainer",
-      "topics": [
-        "teamplay"
-      ]
+      "role": "Veteran Trainer"
     },
     {
       "fafId": 222894,
+      "focus": "Any rating, any map but Seton's",
       "name": "Sladow-Noob",
       "note": "Teaches any ranking in any scenario except Seton's",
       "role": "Veteran Trainer"
     },
     {
       "fafId": 294979,
+      "focus": "Any rating, any game mode",
       "name": "Judoka",
       "note": "Focuses on training all ratings in all gamemodes",
       "role": "Experienced Trainer"
     },
     {
       "fafId": 42707,
+      "focus": "Seton's Clutch",
       "maps": [
         "Setons Clutch"
       ],
       "name": "Seraphim-Noob",
       "note": "Specialized on Setons Clutch",
-      "role": "Experienced Trainer",
-      "topics": [
-        "teamplay"
-      ]
+      "role": "Experienced Trainer"
     },
     {
       "fafId": 195232,
+      "focus": "1v1 up to 1800",
       "gameModes": [
         "1v1"
       ],
@@ -107,36 +107,31 @@
     },
     {
       "fafId": 459931,
+      "focus": "Team games and generated maps",
       "name": "Mui",
       "note": "Specialized on Mapgen and Teamgames",
-      "role": "Trainer",
-      "topics": [
-        "teamplay"
-      ]
+      "role": "Trainer"
     },
     {
       "fafId": 373906,
+      "focus": "Dual Gap",
       "maps": [
         "Dual Gap"
       ],
       "name": "GodsMistake",
       "note": "Specialized on Dual Gap",
-      "role": "Trainer",
-      "topics": [
-        "teamplay"
-      ]
+      "role": "Trainer"
     },
     {
       "fafId": 195400,
+      "focus": "Team games and generated maps",
       "name": "WilloWisppsi",
       "note": "Specialized on Mapgen and Teamgames",
-      "role": "Trainer",
-      "topics": [
-        "teamplay"
-      ]
+      "role": "Trainer"
     },
     {
       "fafId": 373105,
+      "focus": "1v1 from 1800",
       "gameModes": [
         "1v1"
       ],
@@ -147,6 +142,7 @@
     },
     {
       "fafId": 164973,
+      "focus": "Replay reviews: vs AI and low-rated TMM",
       "name": "Maudlin27",
       "note": "Replay reviews for Vs AI and sub-1k TMM games",
       "ratingMax": 1000,

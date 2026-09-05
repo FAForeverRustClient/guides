@@ -41,18 +41,19 @@ every client on the next load.
 ```json
 {
   "name": "Seraphim-Noob",
-  "fafId": 101,
-  "role": "Personal trainer",
-  "topics": ["economy", "buildOrder"],
-  "gameModes": ["1v1", "2v2"],
-  "ratingMin": 1000,
-  "ratingMax": 1800,
-  "languages": ["English", "Deutsch"],
-  "discord": "seraphimnoob",
-  "note": "Happy to look at ladder games.",
+  "fafId": 42707,
+  "role": "Experienced Trainer",
+  "focus": "Seton's Clutch",
+  "note": "Specialized on Setons Clutch",
   "accepting": true
 }
 ```
+
+A tile shows four things: the name with the avatar from their FAF account, the
+**role** as its one tag, the **focus** as the heading, and the **note** under
+it. So `focus` is the line that answers "what is this person for" and wants to
+be a phrase rather than a list: *1v1 up to 1800* reads as an answer where
+*1v1 · 0-1800* reads as a database row.
 
 Only `name` is required, and `accepting` defaults to `true`. Someone who steps
 back should get `"accepting": false` rather than be deleted: the tile stays and
