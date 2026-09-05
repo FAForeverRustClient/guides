@@ -13,6 +13,12 @@
     "so the player lands in the right place with one paste left. Turn on Developer",
     "Mode in Discord and use Copy Link on the channel. Empty falls back to discordUrl."
   ],
+  "//resources": [
+    "Empty. The wiki and the forum categories that used to sit here were the",
+    "client's own seed, not training material anybody chose: they are",
+    "destinations, and destinations belong in `links`. What goes in here is",
+    "guides, videos, build orders and replay analyses that somebody vouched for."
+  ],
   "//trainers": [
     "The training team, shown as tiles in the client.",
     "Only `name` is required. `accepting` defaults to true.",
@@ -28,33 +34,7 @@
     "replayReviewUrl": "https://forum.faforever.com/category/4/i-need-help",
     "wikiUrl": "https://wiki.faforever.com"
   },
-  "resources": [
-    {
-      "id": "faf-wiki",
-      "kind": "guide",
-      "summary": "The community's written reference: game mechanics, unit data, client and setup pages.",
-      "title": "The FAF wiki",
-      "topics": [
-        "strategy",
-        "interface"
-      ],
-      "url": "https://wiki.faforever.com"
-    },
-    {
-      "id": "faf-forum-help",
-      "kind": "community",
-      "summary": "The forum category where players ask for advice and post replays for review.",
-      "title": "I need help",
-      "url": "https://forum.faforever.com/category/4/i-need-help"
-    },
-    {
-      "id": "faf-forum-support",
-      "kind": "community",
-      "summary": "For problems with the client, an install or an account rather than with playing.",
-      "title": "Client and account support",
-      "url": "https://forum.faforever.com/category/9/faf-support-client-and-account-issues"
-    }
-  ],
+  "resources": [],
   "trainers": [
     {
       "fafId": 362817,
