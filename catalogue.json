@@ -16,10 +16,11 @@
   "//resources": [
     "Guides, videos, build orders and channels somebody vouched for.",
     "Destinations belong in `links` rather than here.",
-    "A build order written as text lives in guides/ and is linked by its raw",
-    "address: the client fetches that itself and renders it in the tab. The",
-    "button that opens a browser instead rewrites it to the github.com/blob",
-    "address, which is the rendered one.",
+    "A guide written as text lives in guides/ and is linked by its raw address:",
+    "the client fetches that itself and renders it in the tab. The button that",
+    "opens a browser instead rewrites it to the github.com/blob address.",
+    "A page held here keeps its author's name and a link to the original on its",
+    "first line. Everything else is a link to where it lives.",
     "`custom` as a game mode means a game outside the matchmaker. It resolves",
     "to the global leaderboard, which is the rating such material is written",
     "for. Pair it with a team size so the entry still matches a player whose",
@@ -362,7 +363,7 @@
         "strategy"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://wiki.faforever.com/Play/Learning-SupCom/Beginners-Guide-to-Forged-Alliance"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/wiki-beginners-guide.md"
     },
     {
       "id": "faf-guide-in-depth",
@@ -377,7 +378,7 @@
         "economy"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://docs.google.com/document/d/13S4nBDfcBK4WmFtykXGKNmvIPe9L2nbiriISpHNgE4U/edit"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/faf-guide-in-depth.md"
     },
     {
       "id": "wiki-unit-micro",
@@ -388,7 +389,7 @@
         "micro"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://wiki.faforever.com/Play/Learning/Unit-Micro"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/wiki-unit-micro.md"
     },
     {
       "gameModes": [
@@ -408,7 +409,7 @@
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://wiki.faforever.com/en/Play/Learning-SupCom/Beginner-1v1-Guide"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/wiki-beginner-1v1-guide.md"
     },
     {
       "id": "forum-six-laws",
@@ -419,7 +420,7 @@
         "strategy"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://forum.faforever.com/topic/1222/how-to-improve-forever-6-laws"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/forum-six-laws.md"
     },
     {
       "author": "arma473",
@@ -429,16 +430,21 @@
       "id": "forum-arma-ladder-1v1",
       "kind": "guide",
       "related": [
+        "arma-1v1-part-1-a-strong-start",
+        "arma-1v1-part-2-moving-out",
+        "arma-1v1-part-3-big-maps-and-turtles",
+        "arma-1v1-part-4-intermediate",
+        "arma-1v1-part-5-lessons-from-zock",
         "wiki-beginner-1v1-guide"
       ],
-      "summary": "arma473's collected ladder topics, sorted by how far along the reader is.",
+      "summary": "The introduction to arma473's ladder guide. The five parts are here too.",
       "title": "Ladder 1v1: beginner, intermediate and advanced topics",
       "topics": [
         "strategy",
         "buildOrder"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://forum.faforever.com/topic/766/ladder-1v1-beginner-intermediate-and-advanced-topics-by-arma473"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/forum-arma-ladder-1v1.md"
     },
     {
       "id": "eco-compendium",
@@ -464,7 +470,7 @@
         "mapControl"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://app.notion.com/p/5x5-Guide-2ae95eec16af8024a90cf3144688d236"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/five-by-five-guide.md"
     },
     {
       "id": "hotkey-guide",
@@ -494,7 +500,7 @@
         "interface"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://app.notion.com/p/UI-Mod-Guide-22995eec16af802b8f8ff482f934a5aa"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/ui-mod-guide.md"
     },
     {
       "id": "forum-ui-mods-improving-player",
@@ -508,7 +514,7 @@
         "interface"
       ],
       "updatedAt": "2026-09-05",
-      "url": "https://forum.faforever.com/topic/7346/ui-mod-guide-for-the-improving-player"
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/forum-ui-mods-improving-player.md"
     },
     {
       "author": "Bullydozer",
@@ -1055,6 +1061,208 @@
       ],
       "updatedAt": "2026-09-05",
       "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/sladow-1v1-frithen.md"
+    },
+    {
+      "author": "arma473",
+      "gameModes": [
+        "1v1"
+      ],
+      "id": "arma-1v1-part-1-a-strong-start",
+      "kind": "guide",
+      "ratingMax": 250,
+      "related": [
+        "forum-arma-ladder-1v1"
+      ],
+      "summary": "Part 1 of arma473's ladder guide, in the split he wrote it in.",
+      "title": "Ladder 1v1, part 1: a strong start",
+      "topics": [
+        "strategy",
+        "buildOrder"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/arma-1v1-part-1-a-strong-start.md"
+    },
+    {
+      "author": "arma473",
+      "gameModes": [
+        "1v1"
+      ],
+      "id": "arma-1v1-part-2-moving-out",
+      "kind": "guide",
+      "ratingMax": 250,
+      "related": [
+        "forum-arma-ladder-1v1"
+      ],
+      "summary": "Part 2 of arma473's ladder guide, in the split he wrote it in.",
+      "title": "Ladder 1v1, part 2: moving out",
+      "topics": [
+        "strategy",
+        "buildOrder"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/arma-1v1-part-2-moving-out.md"
+    },
+    {
+      "author": "arma473",
+      "gameModes": [
+        "1v1"
+      ],
+      "id": "arma-1v1-part-3-big-maps-and-turtles",
+      "kind": "guide",
+      "ratingMax": 500,
+      "ratingMin": 250,
+      "related": [
+        "forum-arma-ladder-1v1"
+      ],
+      "summary": "Part 3 of arma473's ladder guide, in the split he wrote it in.",
+      "title": "Ladder 1v1, part 3: big maps and master turtles",
+      "topics": [
+        "strategy",
+        "buildOrder"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/arma-1v1-part-3-big-maps-and-turtles.md"
+    },
+    {
+      "author": "arma473",
+      "gameModes": [
+        "1v1"
+      ],
+      "id": "arma-1v1-part-4-intermediate",
+      "kind": "guide",
+      "ratingMax": 750,
+      "ratingMin": 250,
+      "related": [
+        "forum-arma-ladder-1v1"
+      ],
+      "summary": "Part 4 of arma473's ladder guide, in the split he wrote it in.",
+      "title": "Ladder 1v1, part 4: intermediate ladder concepts",
+      "topics": [
+        "strategy",
+        "buildOrder"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/arma-1v1-part-4-intermediate.md"
+    },
+    {
+      "author": "arma473",
+      "gameModes": [
+        "1v1"
+      ],
+      "id": "arma-1v1-part-5-lessons-from-zock",
+      "kind": "guide",
+      "ratingMin": 750,
+      "related": [
+        "forum-arma-ladder-1v1"
+      ],
+      "summary": "Part 5 of arma473's ladder guide, in the split he wrote it in.",
+      "title": "Ladder 1v1, part 5: lessons from Zock",
+      "topics": [
+        "strategy",
+        "buildOrder"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/arma-1v1-part-5-lessons-from-zock.md"
+    },
+    {
+      "author": "CheeseBerry",
+      "gameModes": [
+        "custom",
+        "4v4"
+      ],
+      "id": "setons-ultimate-index",
+      "kind": "guide",
+      "maps": [
+        "Setons Clutch"
+      ],
+      "related": [
+        "setons-ultimate-beginner",
+        "setons-ultimate-novice",
+        "setons-ultimate-intermediate"
+      ],
+      "summary": "An in-depth guide to everything Seton's, split by rating band.",
+      "title": "The Ultimate Seton's Guide",
+      "topics": [
+        "strategy",
+        "teamplay",
+        "economy"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/setons-ultimate-index.md"
+    },
+    {
+      "author": "CheeseBerry",
+      "gameModes": [
+        "custom",
+        "4v4"
+      ],
+      "id": "setons-ultimate-beginner",
+      "kind": "guide",
+      "maps": [
+        "Setons Clutch"
+      ],
+      "ratingMax": 1000,
+      "related": [
+        "setons-ultimate-index"
+      ],
+      "summary": "Beginner Guide (<1k), from CheeseBerry's Seton's guide.",
+      "title": "Seton's: the beginner guide",
+      "topics": [
+        "strategy",
+        "teamplay"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/setons-ultimate-beginner.md"
+    },
+    {
+      "author": "CheeseBerry",
+      "gameModes": [
+        "custom",
+        "4v4"
+      ],
+      "id": "setons-ultimate-novice",
+      "kind": "guide",
+      "maps": [
+        "Setons Clutch"
+      ],
+      "ratingMax": 1200,
+      "ratingMin": 800,
+      "related": [
+        "setons-ultimate-index"
+      ],
+      "summary": "Novice Guide (~1k), from CheeseBerry's Seton's guide.",
+      "title": "Seton's: the novice guide",
+      "topics": [
+        "strategy",
+        "teamplay"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/setons-ultimate-novice.md"
+    },
+    {
+      "author": "CheeseBerry",
+      "gameModes": [
+        "custom",
+        "4v4"
+      ],
+      "id": "setons-ultimate-intermediate",
+      "kind": "guide",
+      "maps": [
+        "Setons Clutch"
+      ],
+      "ratingMax": 1500,
+      "ratingMin": 1000,
+      "related": [
+        "setons-ultimate-index"
+      ],
+      "summary": "Intermediate Guide (~1k-1.5k), from CheeseBerry's Seton's guide.",
+      "title": "Seton's: the intermediate guide",
+      "topics": [
+        "strategy",
+        "teamplay"
+      ],
+      "updatedAt": "2026-09-06",
+      "url": "https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/setons-ultimate-intermediate.md"
     }
   ],
   "trainers": [
