@@ -8,7 +8,7 @@ By the FAF wiki. [The original](https://wiki.faforever.com/Play/Learning-SupCom/
 
 The purpose of this guide is for new players to understand the ultimate basics of Supreme Commander FAF, ensuring basic knowledge of gameplay mechanics are known before playing.
 
-If you haven't setup the FAF client: [Windows Install](/Play/Windows-Install) [Linux Install](/Play/Linux-Install).
+If you haven't setup the FAF client: [Windows Install](https://wiki.faforever.com/Play/Windows-Install) [Linux Install](https://wiki.faforever.com/Play/Linux-Install).
 
 ### Abbreviations
 
@@ -26,7 +26,7 @@ Important to know as you'll see them fairly often in discussions:
 | Mapcontrol | How much of the map you control |
 | Buildpower | How fast a unit can build, repair, capture, and reclaim |
 
-The above is a small, yet pertinent, selection from the [Glossary](/FAQ/Glossary).
+The above is a small, yet pertinent, selection from the [Glossary](https://wiki.faforever.com/FAQ/Glossary).
 
 ## Economy
 
@@ -36,14 +36,14 @@ In this section we'll cover the basics of and terms relating to production and c
 
 Economy consists of 2 resources:
 
-#### <img src="/images/learning/mass_icon.png" width="20"/> Mass
+#### <img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/mass_icon.png" width="20"/> Mass
 
 - Accumulated, per second, by building mass extractors atop of Mass Points
 - Obtained by reclaiming
 - Convert, per second, Energy into Mass with Mass Fabricators
 - Is less plentiful than Energy
 
-#### <img src="/images/learning/energy_icon.png" width="20"/> Energy
+#### <img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/energy_icon.png" width="20"/> Energy
 
 - Also known as Power
 - Accumulated, per second, by building power generators everywhere on land, and building Hydrocarbon Power Plants atop of Hydrocarbon deposits
@@ -77,7 +77,7 @@ There are a few tricks you can use to efficiently deal with overflow, the best o
 
 Remember - glance at both resource bars at the top of the screen every few seconds to make sure your economy is on track, and fixing it immediately if it's not.
 
-### <img src="/images/learning/reclaim_icon.png" width="30"/> Reclaim
+### <img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/reclaim_icon.png" width="30"/> Reclaim
 Everything on the map which isn't terrain, a building or a unit is deemed reclaim. Wreckage of destroyed buildings and units are also reclaim.
 Right clicking with selected builder units (Engineers, the ACU) on objects that can be reclaimed on land and in water, will increase Mass by a set amount based on reclaimed object.
 This can be a surprisingly large part of your income, and you will have an economic advantage over an opponent who isn't reclaiming.
@@ -90,7 +90,7 @@ An interesting Video by \[e\]speed2 on reclaim : <https://www.youtube.com/watch?
 
 ## ACU
 
-![fafguide-beginner-7.jpg](/images/learning/fafguide-beginner-7.jpg)
+![fafguide-beginner-7.jpg](https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/fafguide-beginner-7.jpg)
 
 Each player has an ACU that acts as both a builder and offense unit with a large amount of health points. Whilst not being particularly proficient at either role, the ACU can be upgraded to compliment aspects of both roles.
 Most importantly in the Assassination game mode a player is defeated when their ACU is destroyed, so the dynamic of the ACU is very similar to a combined King and Queen playing piece in Chess.
@@ -151,7 +151,7 @@ Constructing buildings has cost per second on Economy. In the UI entry for a giv
 
 Most but not all buildings have an Energy cost per second; their function is toggleable meaning it can be turned off to stop its Energy per second cost on your economy, but the building's function will cease also. In the case of a Mass Fabricator, this will stop it converting Energy to Mass.
 
-Outside the scope of this guide but worthwhile understanding once you're comfortable with the basics is [Adjacency Bonus](/Play/Learning/Adjacency-Bonus).
+Outside the scope of this guide but worthwhile understanding once you're comfortable with the basics is [Adjacency Bonus](https://wiki.faforever.com/Play/Learning/Adjacency-Bonus).
 
 ## Units
 
@@ -199,7 +199,7 @@ Torpedo variant used exclusively against Naval units and buildings, fires one ta
 
 **Transport**
 Used to transport or ferry Land units, including ACU, long distances quickly and over impassable terrain. Best used to move Land units to a distant front line in a fraction of the time they could themselves, drop off Engineers/ACU at an unclaimed Mass point or Hydrocarbon site, and the only method of moving Land units over water and mountains.
-Please see [Air-Transport](/Play/Learning/Air-Transport) for capacity specifics of each faction's transports.
+Please see [Air-Transport](https://wiki.faforever.com/Play/Learning/Air-Transport) for capacity specifics of each faction's transports.
 
 **Gunship**
 Close Air Support, stays within close proximity of target to deliver continuous fire. Makes quick work of undefended, from air, Land and surfaced Naval targets.
@@ -313,7 +313,7 @@ The First Engineers build:
 - 2nd Engie: Assist building hydrocarbon powerplant, expand, reclaim
 - 3rd Engie: Expand, reclaim, or assist ACU in factory production
 
-<img src="/images/learning/fafguide-beginner-4.jpg" width="1000"/>
+<img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/fafguide-beginner-4.jpg" width="1000"/>
 
 ## Faction Diversity
 
@@ -329,7 +329,7 @@ A strong faction known for their excellent defenses. Recommended for beginners.
 - Con's:
   - T1 Bombers don't have a good precision, making them less efficient to kill the opponent's expanding engineers at the early game.
 
-For more information on intermediate-level play of this faction: [UEF 1v1 Guide](/Play/Learning/UEF-1v1-Guide).
+For more information on intermediate-level play of this faction: [UEF 1v1 Guide](https://wiki.faforever.com/Play/Learning/UEF-1v1-Guide).
 
 ### Cybran - Freedom
 A faction that's more difficult to play but has many tools which make it interesting.
@@ -340,7 +340,7 @@ A faction that's more difficult to play but has many tools which make it interes
   - T1 Bombers have bad precision, making them inefficient vs units and can sometimes fail to kill expanding enemy engineers.
   - No Mobile Shield unit
 
-For more information on intermediate-level play of this faction: [Cybran 1v1 Guide](/Play/Learning/Cybran-1v1-Guide).
+For more information on intermediate-level play of this faction: [Cybran 1v1 Guide](https://wiki.faforever.com/Play/Learning/Cybran-1v1-Guide).
 
 ### Aeon - Clarity
 One of the more difficult factions to play due to some quirks with their tanks, but very rewarding when used correctly.
@@ -352,7 +352,7 @@ One of the more difficult factions to play due to some quirks with their tanks, 
   - T1 Tank has very low health, is quite slow, and requires constant attention.
   - T2 Tank is slow moving and short ranged; not as good vs T1 as other T2 tanks.
 
-For more information on intermediate-level play of this faction: [Aeon 1v1 Guide](/Play/Learning/Aeon-1v1-Guide).
+For more information on intermediate-level play of this faction: [Aeon 1v1 Guide](https://wiki.faforever.com/Play/Learning/Aeon-1v1-Guide).
 
 ### Seraphim - Destruction
 This faction has very strong units and some good defenses, especially shields, though suffer from a lack of unit choice.
@@ -363,7 +363,7 @@ This faction has very strong units and some good defenses, especially shields, t
 - Cons:
   - A distinct lack of units that other factions have, e.g. no Light Assault Bots (LABs)
 
-For more information on intermediate-level play of this faction: [Seraphim 1v1 Guide](/Play/Learning/Seraphim-1v1-Guide).
+For more information on intermediate-level play of this faction: [Seraphim 1v1 Guide](https://wiki.faforever.com/Play/Learning/Seraphim-1v1-Guide).
 
 ## Additional Learning
 
@@ -371,4 +371,4 @@ Additional resources for new players:
 
 [New Starter Guide](https://docs.google.com/document/d/13S4nBDfcBK4WmFtykXGKNmvIPe9L2nbiriISpHNgE4U/edit)
 
-[Three Essential Habits for the New Player](/Play/Learning/Three-Essential-Habits-for-the-New-Player)
+[Three Essential Habits for the New Player](https://wiki.faforever.com/Play/Learning/Three-Essential-Habits-for-the-New-Player)
