@@ -572,6 +572,7 @@
         "Seton's Clutch"
       ],
       "id": "channel-seraphim-com",
+      "imageUrl": "https://yt3.googleusercontent.com/yqP4LfNBAs673SIO8Hw9AMG6Uy6oRVpAJKcHgDn-55aTxilTbHLwMglMGRC681TvA3gpunpP=s176-c-k-c0x00ffffff-no-rj",
       "kind": "community",
       "maps": [
         "Setons Clutch"
@@ -591,6 +592,7 @@
         "1v1"
       ],
       "id": "channel-bullydozer",
+      "imageUrl": "https://yt3.googleusercontent.com/ytc/AIdro_nKGMRJYYnlUnWtYTYLJzCqOSFyGbMo_rPOLHzh6POdn60=s176-c-k-c0x00ffffff-no-rj",
       "kind": "community",
       "summary": "Ladder 1v1, build orders and games with commentary.",
       "title": "BullydozerFAF on YouTube",
@@ -606,6 +608,7 @@
         "Seton's Clutch"
       ],
       "id": "channel-yudi1260",
+      "imageUrl": "https://yt3.googleusercontent.com/ytc/AIdro_k2R4gOzj0DsreLUb4kJ-3QT_RJonCM46s3u0VdSDzVQ_aqrvfIIZb1V__Snx8UK1XO4A=s176-c-k-c0x00ffffff-no-rj",
       "kind": "community",
       "maps": [
         "Setons Clutch"
@@ -623,6 +626,7 @@
         "Seton's Clutch"
       ],
       "id": "channel-foleybts",
+      "imageUrl": "https://yt3.googleusercontent.com/ytc/AIdro_nf9pWLe51EbSJRSN_GC4yLLftnolZEIcHg-iWqqLX1xP0=s176-c-k-c0x00ffffff-no-rj",
       "kind": "community",
       "maps": [
         "Setons Clutch"
@@ -640,6 +644,7 @@
         "1v1"
       ],
       "id": "channel-jaggedappliance",
+      "imageUrl": "https://yt3.googleusercontent.com/ytc/AIdro_lcl0kacYHfDgut-rbWkArMv_st9kXH3IzKBkWodJtGTg=s176-c-k-c0x00ffffff-no-rj",
       "kind": "community",
       "summary": "Ladder 1v1.",
       "title": "JaggedAppliance on YouTube",
@@ -652,6 +657,7 @@
     {
       "author": "Farms",
       "id": "channel-farmsletje",
+      "imageUrl": "https://yt3.googleusercontent.com/ytc/AIdro_npfrbaKS8lUKLfiRpdecD_wRXTz9rQHJ8L1qR1t9BHIHw=s176-c-k-c0x00ffffff-no-rj",
       "kind": "community",
       "related": [
         "twitch-stellartactician"
@@ -667,6 +673,7 @@
     {
       "author": "Farms",
       "id": "twitch-stellartactician",
+      "imageUrl": "https://static-cdn.jtvnw.net/jtv_user_pictures/37ba142b-0603-4afd-8dc9-6a8ad8aba29f-profile_image-300x300.png",
       "kind": "community",
       "related": [
         "channel-farmsletje"

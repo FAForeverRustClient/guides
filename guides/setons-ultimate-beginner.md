@@ -7,17 +7,25 @@ When starting to play Seton’s, you only really need to know what “role” yo
 
 ## The Map
 
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/01.jpg)
+
 Ye old Seton’s. Brings a tear to my eye :’)
 
 ## Spawning Locations
+
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/02.jpg)
 
 Spawns are mostly, but not entirely, symmetrical.
 
 ## Location Names
 
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/03.jpg)
+
 These location names were created by the community over the years and are pretty much accepted by everyone.
 
 ## Resource Allocation
+
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/04.jpg)
 
 Similar to the location names, this resource allocation is not “official”, but it is the one that happens to work best (in the sense that all mexes get claimed asap). This allocation is therefore the one everyone assumes at the start of every Seton’s game. It is possible to deviate from this, but if you want to do so, communicate with your team beforehand or people will justifiably yell at you.
 
@@ -38,7 +46,7 @@ The mexes are very spread out. This makes T2/T3 air and drops very strong, as st
 Even though I describe a “normal” game of Seton’s here, only a minority of your Seton’s games will actually be “normal”. Weird stuff happens all the time.
 Still, understanding how a default Seton’s game flows is helpful as a reference and, everything else being equal, it should inform your default strategy as well.
 
-Note that you are not forced to follow the playbook I outline below. What I describe here is just the simplest way to play Seton’s.
+Note that you are not forced to follow the playbook I outline below. What I describe here is just the simplest way to play Seton’s.
 
 ## The First 10 Minutes
 
@@ -59,7 +67,7 @@ All players Are on full T3 or post-T3 eco.
 Both ponds Are engaged in a T3 navy battle.
 The Air players
 
-Do their best to assist whichever pond they think has the best chances of winning, usually the Rock pond. If a decisive air fight happens, the navy players need to quickly make some cruisers to avoid getting torped into oblivion.
+Do their best to assist whichever pond they think has the best chances of winning, usually the Rock pond. If a decisive air fight happens, the navy players need to quickly make some cruisers to avoid getting torped into oblivion.
 
 ## Minute 30 - 40
 
