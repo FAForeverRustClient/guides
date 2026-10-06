@@ -79,7 +79,7 @@ There are several ways you can use your transports, one being for small drops wh
 
 ## How to get units to follow your orders
 ### Pathfinding
-![engie_pathfinding_1.jpg](/images/learning/engie_pathfinding_1.jpg){.align-right}
+![engie_pathfinding_1.jpg](https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/engie_pathfinding_1.jpg){.align-right}
 
 Pathfinding is one of the most prominent issues of Forged Alliance up to this day. It slows down games, ruins the experience, and causes frustration. Knowing how to deal with it is necessary. It's tightly connected with some of the topics listed below so it's recommended to familiarize yourself with them. Pathfinding in this game is bad and often causes units to collide with each other, lose acceleration, rotate undesirably and block each other's movements. This however can also be used to your advantage.
 - Time is especially important early on so you have to orchestrate your base and movements with the thought of having nothing interfering with something else.
@@ -136,9 +136,9 @@ If you meet frontloaded units of your opponent you have to not allow them to use
 
 ### Fire states
 In FA there are 3 fire states.
--![return_fire.png](/images/learning/return_fire.png) Return fire - the default fire mode, acts as you would expect it to, all units start engaging as soon as they can.
--![ground_fire.png](/images/learning/ground_fire.png) Ground fire - the same as return fire with 1 exception, if you use the attack command on the ground units will attack the ground spot instead of attack moving to that point. This is why it's recommended to use alt+right click for attack moving.
--![holdfire.png](/images/learning/hold_fire.png) Hold fire - turns your units into pacifist activists of modern society and puts pink glasses on them. Useful when you want to sneak some stealthy units through and don't want to give yourself out by accidentally shooting something. Used with units like Monkeylord (cybran T4). Alternatively can be used to stop accidental team damage.
+-![return_fire.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/return_fire.png) Return fire - the default fire mode, acts as you would expect it to, all units start engaging as soon as they can.
+-![ground_fire.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/ground_fire.png) Ground fire - the same as return fire with 1 exception, if you use the attack command on the ground units will attack the ground spot instead of attack moving to that point. This is why it's recommended to use alt+right click for attack moving.
+-![holdfire.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/hold_fire.png) Hold fire - turns your units into pacifist activists of modern society and puts pink glasses on them. Useful when you want to sneak some stealthy units through and don't want to give yourself out by accidentally shooting something. Used with units like Monkeylord (cybran T4). Alternatively can be used to stop accidental team damage.
 
 ### Radar vs Direct visual; Stealth, Cloak, Omni, Radar, Sonar, Jammer
 
