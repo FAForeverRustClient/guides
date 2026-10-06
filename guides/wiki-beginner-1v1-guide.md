@@ -197,9 +197,9 @@ Where your ACU moves is going to depend on the map. ***Generally speaking, you w
 
 In the images below, the bisecting lines that were mentioned earlier are drawn in cyan and the potential places where you can send your ACU are highlighted in yellow:
 
-![acu_movement_where_example1.png](/beginner-1v1-guide/acu_movement_where_example1.png)![acu_movement_where_example2.png](/beginner-1v1-guide/acu_movement_where_example2.png)
-![acu_movement_where_example3.png](/beginner-1v1-guide/acu_movement_where_example3.png)![acu_movement_where_example4.png](/beginner-1v1-guide/acu_movement_where_example4.png)
-![acu_movement_where_example5.png](/beginner-1v1-guide/acu_movement_where_example5.png)
+![acu_movement_where_example1.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/acu_movement_where_example1.png)![acu_movement_where_example2.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/acu_movement_where_example2.png)
+![acu_movement_where_example3.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/acu_movement_where_example3.png)![acu_movement_where_example4.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/acu_movement_where_example4.png)
+![acu_movement_where_example5.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/acu_movement_where_example5.png)
 
 For the maps where there are two or more possible locations to send your ACU, you can usually take the safer approach and head towards the POI that is closer to your half of the map so that you can protect the position with your ACU. On the other hand, an early offensive move towards the enemy’s POI on their half of the map is usually too risky, especially if their ACU is already there with some of their own tanks. However, this can be an effective move if they are too slow to secure their own contested POI which is usually the case for lower rated 1v1 players.
 
@@ -208,9 +208,9 @@ For the maps where there are two or more possible locations to send your ACU, yo
 ***During combat, have your ACU slightly in front of your units and not the other way around!*** As mentioned earlier, your ACU is a very tanky unit (10-12K HP depending on faction) compared to your T1 tanks (155-300 HP). Therefore, it is very important that your ACU absorb as much damage as possible without actually dying. Every shot that goes towards it is a shot that didn’t go towards your squishier army. Thus, your army will live longer and its effective DPS will be preserved.
 
 In the illustration below, Blue's ACU is positioned ahead of their units whereas Red's ACU is behind theirs. Red currently does not have enough units to overwhelm Blue's ACU so Red's units are getting farmed for free by Blue's ACU while Blue's army is unharmed, but ready to back up their ACU if Red commits to a hard push.
-![basic_acu_movement_how_example1.png](/beginner-1v1-guide/basic_acu_movement_how_example1.png)
+![basic_acu_movement_how_example1.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/basic_acu_movement_how_example1.png)
 In this second illustration, both ACUs are posturing against each other with their army behind them. This is because they are attempting to secure the reclaim at this location while also taking pot shots at each other's army if given the chance.
-![basic_acu_movement_how_example2.png](/beginner-1v1-guide/basic_acu_movement_how_example2.png)
+![basic_acu_movement_how_example2.png](https://raw.githubusercontent.com/FAForever/wiki-pages/main/beginner-1v1-guide/basic_acu_movement_how_example2.png)
 
 This is obviously a potentially dangerous move as your ACU can be overwhelmed if there are too many opposing tanks. But understanding the limits of what your ACU can do at different stages of the game is a critical component for improving in the game. So do not be afraid to throw your ACU into danger if you think you can win the engagement. If you were correct, then you took a calculated risk and reaped the benefits. If you were wrong and lost the game, then you gained experience and should understand what went wrong so you can avoid making the same mistake in the future.
 

@@ -36,14 +36,14 @@ In this section we'll cover the basics of and terms relating to production and c
 
 Economy consists of 2 resources:
 
-#### <img src="/images/learning/mass_icon.png" width="20"/> Mass
+#### <img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/mass_icon.png" width="20"/> Mass
 
 - Accumulated, per second, by building mass extractors atop of Mass Points
 - Obtained by reclaiming
 - Convert, per second, Energy into Mass with Mass Fabricators
 - Is less plentiful than Energy
 
-#### <img src="/images/learning/energy_icon.png" width="20"/> Energy
+#### <img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/energy_icon.png" width="20"/> Energy
 
 - Also known as Power
 - Accumulated, per second, by building power generators everywhere on land, and building Hydrocarbon Power Plants atop of Hydrocarbon deposits
@@ -77,7 +77,7 @@ There are a few tricks you can use to efficiently deal with overflow, the best o
 
 Remember - glance at both resource bars at the top of the screen every few seconds to make sure your economy is on track, and fixing it immediately if it's not.
 
-### <img src="/images/learning/reclaim_icon.png" width="30"/> Reclaim
+### <img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/reclaim_icon.png" width="30"/> Reclaim
 Everything on the map which isn't terrain, a building or a unit is deemed reclaim. Wreckage of destroyed buildings and units are also reclaim.
 Right clicking with selected builder units (Engineers, the ACU) on objects that can be reclaimed on land and in water, will increase Mass by a set amount based on reclaimed object.
 This can be a surprisingly large part of your income, and you will have an economic advantage over an opponent who isn't reclaiming.
@@ -90,7 +90,7 @@ An interesting Video by \[e\]speed2 on reclaim : <https://www.youtube.com/watch?
 
 ## ACU
 
-![fafguide-beginner-7.jpg](/images/learning/fafguide-beginner-7.jpg)
+![fafguide-beginner-7.jpg](https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/fafguide-beginner-7.jpg)
 
 Each player has an ACU that acts as both a builder and offense unit with a large amount of health points. Whilst not being particularly proficient at either role, the ACU can be upgraded to compliment aspects of both roles.
 Most importantly in the Assassination game mode a player is defeated when their ACU is destroyed, so the dynamic of the ACU is very similar to a combined King and Queen playing piece in Chess.
@@ -313,7 +313,7 @@ The First Engineers build:
 - 2nd Engie: Assist building hydrocarbon powerplant, expand, reclaim
 - 3rd Engie: Expand, reclaim, or assist ACU in factory production
 
-<img src="/images/learning/fafguide-beginner-4.jpg" width="1000"/>
+<img src="https://raw.githubusercontent.com/FAForever/wiki-pages/main/images/learning/fafguide-beginner-4.jpg" width="1000"/>
 
 ## Faction Diversity
 
