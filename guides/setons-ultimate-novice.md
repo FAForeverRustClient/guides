@@ -6,9 +6,11 @@ In this section we’ll go over some more general observations, typical strategi
 
 ## Reclaim Distribution
 
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/05.jpg)
+
 In total there is about 50k total reclaim on the map, “only” 12k of which is in the wrecks on the causeway. Tree reclaim is important, kids! The only slot that can more or less ignore tree reclaim is Mid, as they have the more important center reclaim to fight over. All other slots should put at least some effort into collecting their trees in a timely manner. For tree reclaim alone, Beach and Rock want at least one factory to make 10-15 reclaim engies, Air wants two factories making 20-30 reclaim engies. Rule of thumb: Stop making additional
 
-engies once half the reclaim is gone. Btw. this heuristic works for other types of spread out reclaim on other maps too.
+engies once half the reclaim is gone. Btw. this heuristic works for other types of spread out reclaim on other maps too.
 Also note that trees not only give mass, but also energy, so the ~7k mass in trees that e.g. the air player collects will also give them 70k energy too.
 The couple rocks on the map matter quite a lot for the Rock player as it is very close to their spawn point. Any good Rock opening must make use of them. The rocks in the Air player’s section are just a nice bonus, but of course you shouldn’t forget about them either.
 
@@ -18,12 +20,16 @@ The couple rocks on the map matter quite a lot for the Rock player as it is very
 
 Rock vs Beach AND Mid on navy is a roughly even matchup. While it is a 1v2 in player count, and it is 18 mexes vs 23, the Mid player will be delayed in their eco a bit due to the early fighting for the reclaim, so the total mass available for navy production is about equal on both sides.
 
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/06.jpg)
+
 ## Where to Fight
 
 As mentioned earlier, there is nothing to fight for in the ponds themselves. Only their edges matter. As such, you want to fight as close as possible to your side of the map, but not so close that your eco, base or harbor are actually in danger.
 During the T1 stage, you want to fight basically right in front of, or maybe even inside of your harbor.
 
-During the T2 and T3 stage you want to fight just far out enough for your production and mexes to be safe. This is around here:
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/07.jpg)
+
+During the T2 and T3 stage you want to fight just far out enough for your production and mexes to be safe. This is around here:
 These spots aren’t written in stone, but fighting as close to your production as is safely possible is of course advantageous for many reasons. If you are getting attacked, consider retreating and consolidating your forces at these lines before you defend. If you are the attacker, or if retreating behind your naval facs is necessary to not die, you of course can’t do this.
 
 ## Stalling the Enemy
@@ -46,7 +52,7 @@ Seton’s is a defensive map and the vast majority of games go into the T3 stage
 As such, keeping pace on eco with your enemies is even more important on Seton’s than on most other maps. If you don’t, you’ll just become irrelevant at some point. No amount of micro or clever tactics will make you win against an enemy that has twice your eco and army size.
 Very roughly, a T3 mex takes 5 minutes to pay itself back, post-T3 eco (mass fabs, bois) need about 8 minutes.
 
-As a general guideline, if you expect the game to go on for at least 10 more minutes, it is in a mostly stable gamestate, and your team is not currently working on a game ender, you should probably eco more.
+As a general guideline, if you expect the game to go on for at least 10 more minutes, it is in a mostly stable gamestate, and your team is not currently working on a game ender, you should probably eco more.
 (T1) Submarines
 This section is mostly Seton’s specific advice. While this the same reasoning also largely applies to any other navy centric map without underwater mexes, submarines are particularly bad on setons due to the high eco, long navy travel times, and easily defended shore lines.
 Subs, especially higher tech ones, do sometimes have legitimate uses. If you are starting out though I’d heavily recommend just not making any on maps without underwater mexes due to the reasons outlined below.
@@ -83,7 +89,7 @@ T1 submarines are effectively incapable of ever threatening your naval productio
 
 Torpedo bombers are, arguably, the best navy unit in the game. They might not seem that way at first but for the same reason that subs are bad torpedo bombers are straight up amazing:
 
-Their stats are ridiculously good. They are super cheap, about the cost of a frig and deal an absurd 600 damage per drop.
+Their stats are ridiculously good. They are super cheap, about the cost of a frig and deal an absurd 600 damage per drop.
 In fact, torpedo bombers two-hit all T1 subs, even though the submarine costs significantly more than a torp bomber. The submarine can’t even fight back.
 You could argue that this is similar to how a submarine “counters” a frigate: The frig can’t fight back either, afterall. The difference is that a torpedo bomber takes two passes, about 10 seconds to kill a sub, while a sub takes an entire minute to kill a single frig. A minute is an eternity!
 Furthermore a frig can just retreat and the sub can’t catch up as they have the same speed, while the torpedo bomber is much faster than a sub.
@@ -98,11 +104,17 @@ Spread Attacking torpedo bombers is one of the rare situations in FAF where micr
 Go into the keybind menu, bind “Distribute Orders” and/or its shift version to an easily reachable hotkey (I have it on shift-Z for example), and use it whenever the opportunity presents itself. On Seton’s that will mostly be torp bombers, but there are plenty of other common uses too. It even works with move and build commands, or any combination of them.
 Lets say your enemy is spamming T1 subs:
 
-You, having read this guide, already made some torp bombers. Select these torp bombers and give a string of attack commands on the enemy subs while holding shift. It should look like this:
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/08.jpg)
 
- Once you are done, press the Distribute Orders hotkey:
+You, having read this guide, already made some torp bombers. Select these torp bombers and give a string of attack commands on the enemy subs while holding shift. It should look like this:
 
-And then you can watch the subs die.
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/09.jpg)
+
+ Once you are done, press the Distribute Orders hotkey:
+
+![](https://raw.githubusercontent.com/FAForeverRustClient/guides/main/guides/assets/setons-ultimate/10.jpg)
+
+And then you can watch the subs die.
 
 ## Destroyers
 
@@ -112,7 +124,7 @@ So when should you make T1 subs?
 T1 subs do have legitimate uses, sometimes even on Seton’s.
 First of, and most common, is to build submarines on maps with underwater mexes, both to defend your own and to deny your opponents. This only makes sense before T2 air or navy is
 
-on the field, as destros and torp bombers do that job much better, but before that only T1 subs can do this job.
+on the field, as destros and torp bombers do that job much better, but before that only T1 subs can do this job.
 A very small number of T1 subs can also be used to harass enemy frigs away from strategically important areas. This is sometimes useful even on Seton’s to deny the enemy frig-radar coverage to an area without having to invest into enough frigs yourself to force them away via numbers alone. Even though this is a very niche use case, it’s technically the most common reason for T1 subs to be built in high rated Seton’s. Please don’t do this. The benefit is negligible and the downside is that, as mentioned, T1 subs just die for free during the T2 stage of navy. Just make like 2 frigs instead and you can achieve the same with units that are actually useful later.
 T1 Sub’s can also be used to attack low health underwater ACUs during the early game. On Seton’s this is only rarely relevant, but it does happen that a commander needs to retreat from the causeway through water and in this spot only T1 subs can finish it off. Until you are at least 1.5k (and know what you are doing) this situation is the only time on Seton’s where you are legally allowed to make T1 subs.
 What about T2/T3 subs?
@@ -122,7 +134,7 @@ Yet, T2 subs can legitimately be strong if you have air control and your enemy u
 T2 subs can also shut down a UEF Battlecruiser rush that doesn’t have air or torp boat backup, as BCs don’t have any torpedo weapons either. The same is mostly true for T3 subs, but they are legitimately strong in large late-game T3 navy fights. Due to the recent torpedo mechanics rework, groups of them don’t overkill enemy ships nearly as much anymore, while themselves being harder to kill with torpedo bombers. (Arguably, they are currently too strong even. They’ll probably get nerfed in the future.)
 Still, T2/T3 subs have the big problem of just evaporating if you have misjudged the situation, or if your Air isn’t paying attention for like 30 seconds. Use them as counters for the specific situations they are good in, but keep in mind that overbuilding them can lead to a very quick game loss.
 
-How To Counter T1 Sub Spam on Seton’s Step by Step
+How To Counter T1 Sub Spam on Seton’s Step by Step
 If they surprise attack you, first and foremost move your navy away from them.
 They have the same speed as your normal T1 navy, so you can just move away and they’ll never catch you. Also, there is no reason to fight them, as they can’t harm anything but your navy or your facs. They can’t catch your navy, and if they move near your naval facs, you just build torp launchers there, which kill them easily.
 If you are going for a T2 navy rush (as non-uef), your destroyers will clean them up for free, so you can just wait for those.

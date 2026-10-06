@@ -91,7 +91,7 @@ body:
     id: modes
     attributes:
       label: Game modes
-      description: Comma separated. Leave empty when the guide is about the game rather than about one queue, which is an answer and not a gap.
+      description: Comma separated matchmaker queues (1v1, 2v2, 3v3, 4v4), or Seton's Clutch for Seton's material, which is a tag of its own and not 4v4. Leave empty when the guide is about the game rather than about one queue, which is an answer and not a gap.
       placeholder: 1v1, 4v4
 
   - type: input

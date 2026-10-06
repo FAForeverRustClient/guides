@@ -137,8 +137,9 @@ The short version:
       "kind": "buildOrder",
       "level": "beginner",
       "url": "https://...",
+      "imageUrl": "https://content.faforever.com/maps/previews/large/setons_clutch_-_faf_version.v0004.png",
       "ratingMin": 700, "ratingMax": 1200,
-      "gameModes": ["4v4"], "topics": ["buildOrder", "economy"],
+      "gameModes": ["Seton's Clutch"], "topics": ["buildOrder", "economy"],
       "maps": ["Setons Clutch"], "factions": ["uef"],
       "related": ["economy-fundamentals"] }
   ]

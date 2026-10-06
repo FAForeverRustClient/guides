@@ -1,4 +1,4 @@
-# Crossfire Channel
+# Crossfire Canal
 
 A 1v1 build order by Sladow-Noob.
 

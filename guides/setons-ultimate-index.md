@@ -25,4 +25,4 @@ Default Map and Settings. 4v4, Full Share, 1500 unit cap, share unit cap to alli
 Contributors ● Yew ● Seraphim-Noob
 Comments and Feedback
 
-● Nory ● Pants ● Sladow
+● Nory ● Pants ● Sladow
