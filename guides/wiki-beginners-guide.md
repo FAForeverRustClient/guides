@@ -369,6 +369,6 @@ For more information on intermediate-level play of this faction: [Seraphim 1v1 G
 
 Additional resources for new players:
 
-[New Starter Guide](https://docs.google.com/document/d/13S4nBDfcBK4WmFtykXGKNmvIPe9L2nbiriISpHNgE4U/edit)
+[New Starter Guide](https://github.com/FAForeverRustClient/guides/blob/main/guides/faf-guide-in-depth.md)
 
 [Three Essential Habits for the New Player](https://wiki.faforever.com/Play/Learning/Three-Essential-Habits-for-the-New-Player)

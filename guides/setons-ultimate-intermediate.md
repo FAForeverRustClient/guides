@@ -2,8 +2,6 @@
 
 By CheeseBerry.
 
-The author marks this part as still in progress.
-
 In this section we’ll go over more observations, with a focus on common play patterns and their consequences for the Seton’s meta.
 
 ## Area threatened by Navy

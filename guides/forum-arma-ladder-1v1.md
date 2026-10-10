@@ -2,8 +2,6 @@
 
 By arma473. [The original](https://forum.faforever.com/topic/766/ladder-1v1-beginner-intermediate-and-advanced-topics-by-arma473).
 
-The five parts are separate entries in this library; this is the introduction the author wrote for them.
-
 ## 1v1 Ladder Guide for New Players and Intermediate/Advanced Topics
 
 Welcome to FAF. We are glad you are here.

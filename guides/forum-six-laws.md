@@ -17,7 +17,7 @@ The beginning of every improvement journey is to set up your game and environmen
 
 ### Install useful UI mods
 
-See my other guide for this: [UI mod guide for the improving player](https://forum.faforever.com/topic/1186/ui-mod-guide-for-the-improving-player).
+See my other guide for this: [UI mod guide for the improving player](https://github.com/FAForeverRustClient/guides/blob/main/guides/forum-ui-mods-improving-player.md).
 
 ### Set up your hotkeys in an efficient way
 

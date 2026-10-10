@@ -2,7 +2,7 @@
 
 By CheeseBerry.
 
-Contributors: Yew and Seraphim-Noob. The guide is split by rating band, and each band is a separate entry in this library. The author's advanced and expert sections are still notes rather than guidance, so they are not here yet.
+Contributors: Yew and Seraphim-Noob.
 
 ## Ultimate Seton’s Guide
 
