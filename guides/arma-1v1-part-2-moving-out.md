@@ -72,7 +72,7 @@ But moving out can also be a death sentence for you, if your enemy is able to sw
 
 As you play, you will get better about not putting your ACU in the wrong place. Since this is an extremely basic guide, I just want to give basic advice:
 
-have a radar, or fly a scout plane, near where your ACU is, so you don’t get surprised by a sudden swarm of enemy units
-have units with your ACU, so if you are attacked, you can try to win the fight
-once the game gets past 10 minutes, or if you see that your opponent has T2 air, have flak with your ACU
-the gun upgrade is very strong. If your opponent has the gun upgrade and you don’t, his ACU is very dangerous to yours.
+- have a radar, or fly a scout plane, near where your ACU is, so you don’t get surprised by a sudden swarm of enemy units
+- have units with your ACU, so if you are attacked, you can try to win the fight
+- once the game gets past 10 minutes, or if you see that your opponent has T2 air, have flak with your ACU
+- the gun upgrade is very strong. If your opponent has the gun upgrade and you don’t, his ACU is very dangerous to yours.

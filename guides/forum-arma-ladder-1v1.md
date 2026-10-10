@@ -4,7 +4,7 @@ By arma473. [The original](https://forum.faforever.com/topic/766/ladder-1v1-begi
 
 The five parts are separate entries in this library; this is the introduction the author wrote for them.
 
-1v1 Ladder Guide for New Players and Intermediate/Advanced Topics
+## 1v1 Ladder Guide for New Players and Intermediate/Advanced Topics
 
 Welcome to FAF. We are glad you are here.
 
@@ -16,17 +16,13 @@ The fun stuff in FAF is marching your armies around, but you need an economy to 
 
 I split this guide into 5 parts, which are set out in separate forum posts below. They are linked here:
 
-Part 1: a strong start is for players who still don’t know how or why they should push out of their base.
+- **Part 1: a strong start** is for players who still don’t know how or why they should push out of their base.
+- **Part 2: moving out** gives a little more advice about how to get out of your base. These are intended for people having trouble getting past 250 rating points on the 1v1 ladder, but they’re worth a quick read even if your rating is better.
+- **Part 3: big maps and master turtles** deals with specific matchups that may frustrate low-rated players.
+- **Part 4: intermediate ladder concepts** is advice aimed at more advanced ladder warriors. If your rating is somewhere in the 250-500 point range, you should get a lot of value out of these.
+- **Part 5: lessons from Zock** is a summary of advice from one of the top players of all time, that he gave in personalized 1-on-1 lessons, which he uploaded to YouTube. That is intended for advanced ladder warriors. Even players at and above 1,000 rating points will probably find something of interest in what Zock teaches.
 
-Part 2: moving out gives a little more advice about how to get out of your base. These are intended for people having trouble getting past 250 rating points on the 1v1 ladder, but they’re worth a quick read even if your rating is better.
-
-Part 3: big maps and master turtles deals with specific matchups that may frustrate low-rated players.
-
-Part 4: intermediate ladder concepts is advice aimed at more advanced ladder warriors. If your rating is somewhere in the 250-500 point range, you should get a lot of value out of these.
-
-Part 5: lessons from Zock is a summary of advice from one of the top players of all time, that he gave in personalized 1-on-1 lessons, which he uploaded to YouTube. That is intended for advanced ladder warriors. Even players at and above 1,000 rating points will probably find something of interest in what Zock teaches.
-
-Please read before commenting:
+## Please read before commenting
 
 Any corrections where the guide is wrong are appreciated. I welcome any discussion in this thread in more depth about any of these issues and any other advice that you think would be valuable.
 
