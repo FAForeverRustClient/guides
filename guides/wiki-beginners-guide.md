@@ -371,4 +371,4 @@ Additional resources for new players:
 
 [New Starter Guide](https://github.com/FAForeverRustClient/guides/blob/main/guides/faf-guide-in-depth.md)
 
-[Three Essential Habits for the New Player](https://wiki.faforever.com/Play/Learning/Three-Essential-Habits-for-the-New-Player)
+[Three Essential Habits for the New Player](https://github.com/FAForeverRustClient/guides/blob/main/guides/wiki-three-essential-habits.md)
