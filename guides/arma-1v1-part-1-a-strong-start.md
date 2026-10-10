@@ -12,12 +12,13 @@ That is from the introduction to Heaven’s build order tutorial, which you shou
 
 The first part of the standard build order for your ACU is:
 
-a land factory
-two pgens
-two mexes
-one more pgen
-two more mexes
-one more pgen
+1. a land factory
+2. two pgens
+3. two mexes
+4. one more pgen
+5. two more mexes
+6. one more pgen
+
 You make them, with your ACU, in that order. The reason this build order is so good is that you get a factory up quickly, so you can start making engineers; then you get enough energy that you won’t just run out of energy, and you get some mass income as well. It gets the mexes as quickly as possible without running out of energy.
 
 But the build order is more than this: also you need to make more pgens and more factories. Your first factory should make mostly engineers so you have plenty of engineers to do all of the things. As long as more engineers keep coming out of your factory, hopefully when you see the engineers just standing there, that should help to remind you to give them orders.
@@ -36,7 +37,7 @@ A plan can be as simple as: “I’m going to follow a generic build order, make
 
 It is said that “no plan survives contact with the enemy.” Sometimes that is true, sometimes not. But even if your plan is not working perfectly, it is giving you a framework to evaluate your situation and to more quickly decide what to do next (including: whether to change your plan).
 
-Here is Zock’s explanation for why you need to have a plan: https://www.youtube.com/watch?v=EwwVVS5aGeA&list=PLJclJGPtIxW1Znl4idf8EEdHMnTzDJ810&t=51m46s
+Here is Zock’s explanation for why you need to have a plan: [Zock’s video, 51:46](https://www.youtube.com/watch?v=EwwVVS5aGeA&list=PLJclJGPtIxW1Znl4idf8EEdHMnTzDJ810&t=51m46s)
 
 ## Mistake: staying in your base
 
@@ -69,7 +70,9 @@ The best advice I ever got, was in my 8th ladder match, when @RLO told me, “wh
 Because turtle players don’t need many units, they only build 1-2 factories. If you watch games from high-level players, or even just players at the 400-500 rating points range, you will see a lot more factories.
 
 How many factories to make? The short version is: one T1 factory for every 2 T1 mex you can hold.
+
 If you start on a small map where you have 4 mexes in your base and 6 more nearby, then you’re going to need at least 5 land factories.
+
 On a lot of maps, you might have 16 mexes or more that you can take and hold. So it is normal to build 8+ land factories, depending on the map. It takes time to get 8 factories up, but it also takes time to grab all of the mexes that you will need to run them.
 
 Factories take a long time to build, so it is best to have more than 1 engineer at a time making a single factory. When you are just starting out, for small maps make all of the land factories in your base. Don’t try spreading them around a small map. Don’t just leave your ACU standing there. If your ACU is not going to leave your base, it should be building factories or pgens for you.
