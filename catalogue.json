@@ -2048,6 +2048,27 @@
         "micro"
       ],
       "updatedAt": "2026-10-15"
+    },
+    {
+      "durationMinutes": 15,
+      "id": "lesson-balance-your-economy",
+      "kind": "lesson",
+      "lesson": {
+        "files": [
+          "FAF_Lesson_Economy_01_scenario.lua",
+          "FAF_Lesson_Economy_01_save.lua",
+          "FAF_Lesson_Economy_01_script.lua",
+          "FAF_Lesson_Economy_01_strings.lua"
+        ],
+        "folder": "FAF_Lesson_Economy_01"
+      },
+      "level": "beginner",
+      "summary": "Played in the game: take every mass point without stalling or floating, then keep the income up while raiders and bombers hit your extractors. New mass points on every start.",
+      "title": "Balance your economy",
+      "topics": [
+        "economy"
+      ],
+      "updatedAt": "2026-10-15"
     }
   ],
   "trainers": [
