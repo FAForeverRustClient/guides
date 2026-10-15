@@ -63,6 +63,12 @@ Rules that save a debugging session:
   FAF's `init_faf.lua` still mounts only a map folder with a `.scmap` in it,
   so the client puts an empty `<folder>.scmap` next to the files it downloads.
   The game never opens it.
+- **Mass points can be your own.** The borrowed map's mass markers live in its
+  save file, which a lesson does not load. A script can put deposits down
+  itself in `OnPopulate` (`CreateResourceDeposit`, plus the rock and the
+  marking that `ScenarioUtilities.CreateResources` adds), as the economy lesson
+  does with a new random layout on every launch. A deposit cannot be removed
+  again, so draw the layout once per session, not per stage.
 - **Every number the lesson states is read off a unit blueprint.** A lesson that
   says "range 40" when the unit has 38 teaches the wrong thing.
 - **Pass on what the player can see.** A stage is passed when its targets die
