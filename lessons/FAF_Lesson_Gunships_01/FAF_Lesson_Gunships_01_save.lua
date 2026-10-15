@@ -88,7 +88,7 @@ Scenario = {
             },
         },
 
-        --[[  The target army. Cybran (faction 2) so the Bangers and Mantis   ]]--
+        --[[  The target army. Cybran (faction 2) so the Bangers and escort   ]]--
         --[[  wear their own colours, and a blank plan so the AI builds and   ]]--
         --[[  moves nothing: a Banger with no orders stays where it was put   ]]--
         --[[  and shoots whatever flies into its 40.                          ]]--
