@@ -2037,8 +2037,7 @@
           "FAF_Lesson_Gunships_01_scenario.lua",
           "FAF_Lesson_Gunships_01_save.lua",
           "FAF_Lesson_Gunships_01_script.lua",
-          "FAF_Lesson_Gunships_01_strings.lua",
-          "FAF_Lesson_Gunships_01_operation.lua"
+          "FAF_Lesson_Gunships_01_strings.lua"
         ],
         "folder": "FAF_Lesson_Gunships_01"
       },

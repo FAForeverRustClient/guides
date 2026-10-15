@@ -22,8 +22,7 @@ its next load like any other entry.
          "FAF_Lesson_Gunships_01_scenario.lua",
          "FAF_Lesson_Gunships_01_save.lua",
          "FAF_Lesson_Gunships_01_script.lua",
-         "FAF_Lesson_Gunships_01_strings.lua",
-         "FAF_Lesson_Gunships_01_operation.lua"
+         "FAF_Lesson_Gunships_01_strings.lua"
        ]
      }
    }
@@ -55,37 +54,45 @@ Start from an existing lesson folder. The parts:
 | `_save.lua` | Armies, alliances, areas and markers. Units can live here or be spawned by the script. |
 | `_script.lua` | The lesson: stages, hints, objectives, and the result line. |
 | `_strings.lua` | Every line the player reads. |
-| `_operation.lua` | Required. `ScenarioFramework.EndOperation` imports it and fails at the debrief without it. |
 
 Rules that save a debugging session:
 
 - **Borrow the terrain.** Point `map` at a map that ships with the game, such as
   `'/maps/SCMP_036/SCMP_036.scmap'`. Every install has those, FAF mounts them,
   and this repository stays text. The co-op mission Prothyon 16 does the same.
+  FAF's `init_faf.lua` still mounts only a map folder with a `.scmap` in it,
+  so the client puts an empty `<folder>.scmap` next to the files it downloads.
+  The game never opens it.
 - **Every number the lesson states is read off a unit blueprint.** A lesson that
   says "range 40" when the unit has 38 teaches the wrong thing.
-- **Measure the habit, not the outcome.** One Banger cannot stop twelve
-  gunships however they are flown, so that stage measures health brought home.
+- **Measure the habit, not the outcome.** Twelve gunships kill three Bangers
+  however they are flown, so that stage measures health brought home.
 - **Never dead-end.** A failed stage offers a retry or the next stage.
 - **Write the result line before anything else in the debrief**, so a player
   who closes the game during the last words still has the run recorded.
+- **End on a board, not on `EndOperation`.** A sim dialogue lists the results
+  and offers to close the game: `Sync.RequestingExit = true` makes the user
+  layer call `ExitGame()`, which a sim script cannot call itself.
 - `ScenarioUtils.InitializeScenarioArmies()`, not `InitializeArmies()`. The
   first one gives no army a commander unless the save file places one.
 - `ScenarioFramework.StartReminders` comes from the co-op featured mod. A lesson
   runs on `faf`, so write hints yourself.
-- The folder name must not contain the word `scenario`. `EndOperation` finds
-  the operation file by replacing that word in the scenario's path.
 
 `node .github/validate.mjs` checks that every listed file exists, that every
 file in the folder is listed, and that the scenario points at its own folder.
 
 ## Testing one locally
 
-Copy the folder into your maps folder and start it directly. This is the same
-argument list the client uses:
+Copy the folder into your maps folder, add the empty terrain file the client
+would add, and start it directly. This is the same argument list the client
+uses:
 
 ```bash
 cp -r lessons/FAF_Lesson_Gunships_01 "$USERPROFILE/Documents/My Games/Gas Powered Games/Supreme Commander Forged Alliance/maps/"
+```
+
+```bash
+touch "$USERPROFILE/Documents/My Games/Gas Powered Games/Supreme Commander Forged Alliance/maps/FAF_Lesson_Gunships_01/FAF_Lesson_Gunships_01.scmap"
 ```
 
 ```bash
