@@ -2026,6 +2026,29 @@
       ],
       "updatedAt": "2026-09-06",
       "url": "https://www.youtube.com/watch?v=cpEJm-DAefw"
+    },
+    {
+      "durationMinutes": 10,
+      "id": "lesson-gunships-against-flak",
+      "imageUrl": "https://content.faforever.com/maps/previews/large/scmp_036.png",
+      "kind": "lesson",
+      "lesson": {
+        "files": [
+          "FAF_Lesson_Gunships_01_scenario.lua",
+          "FAF_Lesson_Gunships_01_save.lua",
+          "FAF_Lesson_Gunships_01_script.lua",
+          "FAF_Lesson_Gunships_01_strings.lua",
+          "FAF_Lesson_Gunships_01_operation.lua"
+        ],
+        "folder": "FAF_Lesson_Gunships_01"
+      },
+      "level": "intermediate",
+      "summary": "Played in the game: three drills on keeping gunships alive under flak. Spread out, shoot the flak first, take flak one at a time.",
+      "title": "Gunships against flak",
+      "topics": [
+        "micro"
+      ],
+      "updatedAt": "2026-10-15"
     }
   ],
   "trainers": [

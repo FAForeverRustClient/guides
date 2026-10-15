@@ -8,7 +8,7 @@
 //
 // So this is the strict half. No dependencies: node and the standard library.
 
-import { readFile, writeFile, access } from "node:fs/promises";
+import { readFile, writeFile, access, readdir } from "node:fs/promises";
 
 const KINDS = ["video", "guide", "buildOrder", "replayAnalysis", "lesson", "community"];
 const LEVELS = ["beginner", "intermediate", "advanced"];
@@ -163,6 +163,80 @@ for (const resource of resources) {
     await access(local[1]);
   } catch {
     complain(resource.id, `points at ${local[1]}, which is not in this repository`);
+  }
+}
+
+// A lesson is a map folder under lessons/ that the client downloads file by
+// file and starts with `/map <folder>`. The client builds every address itself
+// from the folder and the file names, inside this repository, so the checks
+// below are the whole of what stands between a typo here and a lesson that
+// will not load.
+const SAFE_FOLDER = /^[A-Za-z0-9_]+$/;
+const SAFE_FILE = /^[A-Za-z0-9_.-]+$/;
+
+for (const resource of resources) {
+  if (resource?.kind !== "lesson" || resource.tutorialId != null) continue;
+  const where = resource.id ?? "a lesson";
+  const lesson = resource.lesson;
+  if (!lesson || typeof lesson !== "object") {
+    complain(where, "is a lesson with neither `lesson` nor `tutorialId`, so there is nothing to start");
+    continue;
+  }
+  const { folder, files } = lesson;
+  if (typeof folder !== "string" || !SAFE_FOLDER.test(folder)) {
+    complain(where, "lesson.folder should be letters, digits and underscores");
+    continue;
+  }
+  // ScenarioFramework.EndOperation finds the operation file by replacing
+  // "scenario" in the scenario's path, so a folder named with it would send
+  // the debrief looking for a file that does not exist.
+  if (folder.toLowerCase().includes("scenario")) {
+    complain(where, "lesson.folder must not contain the word \"scenario\"");
+  }
+  if (!Array.isArray(files) || files.length === 0) {
+    complain(where, "lesson.files is empty, so the client would download nothing");
+    continue;
+  }
+  for (const file of files) {
+    if (typeof file !== "string" || !SAFE_FILE.test(file) || !file.startsWith(`${folder}_`)) {
+      complain(where, `lesson file "${file}" should be named ${folder}_<part>.lua`);
+      continue;
+    }
+    try {
+      await access(`lessons/${folder}/${file}`);
+    } catch {
+      complain(where, `lists lessons/${folder}/${file}, which is not in this repository`);
+    }
+  }
+  for (const required of ["scenario", "save", "script", "operation"]) {
+    if (!files.includes(`${folder}_${required}.lua`)) {
+      complain(where, `lesson.files is missing ${folder}_${required}.lua`);
+    }
+  }
+  // Every file in the folder has to be listed, or a player gets a lesson that
+  // imports a file nobody downloaded. A README is for the people editing it.
+  try {
+    for (const present of await readdir(`lessons/${folder}`)) {
+      if (present.toLowerCase() === "readme.md") continue;
+      if (!files.includes(present)) {
+        complain(where, `lessons/${folder}/${present} is in the folder but not in lesson.files`);
+      }
+    }
+  } catch {
+    complain(where, `lessons/${folder} is not a folder in this repository`);
+    continue;
+  }
+  // The scenario names its own folder, and the game resolves every path in it
+  // under /maps.
+  try {
+    const scenario = await readFile(`lessons/${folder}/${folder}_scenario.lua`, "utf8");
+    for (const part of ["save", "script"]) {
+      if (!scenario.includes(`'/maps/${folder}/${folder}_${part}.lua'`)) {
+        complain(where, `the scenario does not point its ${part} at /maps/${folder}/${folder}_${part}.lua`);
+      }
+    }
+  } catch {
+    // Already reported as a missing file above.
   }
 }
 
