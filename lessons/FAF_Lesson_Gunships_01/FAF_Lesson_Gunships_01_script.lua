@@ -80,11 +80,9 @@ local TUNING = {
 --- Where things stand. x and z only: every unit is created at
 --- GetTerrainHeight, because the terrain is borrowed.
 local LAYOUT = {
-    -- The Stingers' rally point, south of the middle. The front row starts
-    -- about 57 from the nearest Banger: outside its 40 with room to split
-    -- up, and three seconds' flight from their own 22, where it used to be
-    -- six.
-    Gunships = {128, 180},
+    -- The Stingers' rally point, south of the middle and about 100 from every
+    -- Banger, so a stage starts outside every Banger's 40.
+    Gunships = {128, 215},
     -- A triangle about 18 a side: every Banger covers the other two, so the
     -- three of them are one flak position with three times the fire.
     Stage1 = { Bangers = { {128, 108}, {119, 124}, {137, 124} } },

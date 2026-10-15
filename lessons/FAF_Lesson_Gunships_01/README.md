@@ -9,8 +9,8 @@ Roughly ten minutes end to end.
 | 2 Flak first | Attack the flak, not its escort | The same three Bangers, four Mantis around each, die while at least 9 of the 12 Mantis still stand and at least one Stinger is left |
 | 3 One at a time | Work a flak line from its ends | Five Bangers 45 apart die and at least one Stinger is left |
 
-A stage's units stay on the field for two seconds after its verdict, and the
-Stingers of the next one start about three seconds' flight from firing range.
+A stage's units stay on the field for two seconds after its verdict. The
+Stingers of the next one start about 100 from the flak.
 
 At the end a board lists every stage (passed, passed on which try, or missed),
 the stages passed and the time, with a button that closes the game and one that
