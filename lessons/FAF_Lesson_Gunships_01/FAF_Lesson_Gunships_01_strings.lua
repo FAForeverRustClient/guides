@@ -9,7 +9,8 @@
 -- Every number is read off the unit blueprints. The Banger (url0205): 1000
 -- health, range 40, one 90 damage shell every 0.6 seconds that hurts
 -- everything within 4 of where it lands. The Stinger (uea0203): 700 health,
--- range 22. If a balance patch moves one of them, this file has to follow.
+-- range 22. The Rhino (url0202): ground only. If a balance patch moves one of
+-- them, this file has to follow.
 --
 
 -- Intro ---------------------------------------------------------------------
@@ -33,28 +34,32 @@ S1Wiped = "Every Stinger lost. Split them into groups before you go in."
 -- Stage 2: flak first -------------------------------------------------------
 
 S2Title = "Flak first"
-S2Detail = "Kill the three Bangers while at least 9 of their 12 Mantis escorts are still standing, with at least one Stinger left."
-S2Intro = "The same three Bangers, each in a ring of Mantis tanks. The tanks cannot shoot at aircraft. The Bangers can."
+S2Story = "Commander, the town behind you is under attack. We could spare twelve Stingers: keep those civilians alive."
+S2Detail = "Destroy the column before half the town is lost. While a Banger lives, keep at least 9 of the 12 Mantis standing."
+S2Intro = "Three Bangers march with the column, each inside a ring of Mantis tanks. The tanks cannot shoot at aircraft. The Bangers can."
 
 S2Hint1 = "Attack-move picks the nearest target, and the nearest target is a tank. Give a direct attack order on a Banger."
 S2Hint2 = "Select the Stingers and right-click on a Banger itself, not on the ground next to it."
 
-S2Done = "Bangers first, tanks after. The tanks were never a threat to you."
+S2Done = "Bangers first, tanks after. The column is gone and the town still stands."
 S2FailedTanks = "You were shooting the escort. Every second spent on a tank was a second the Bangers kept firing."
 S2FailedLosses = "Every Stinger lost. Put the attack order on the Bangers themselves."
+S2TownLost = "The town has fallen. Every second on the wrong target was a second the column kept walking."
 
 -- Stage 3: one at a time ----------------------------------------------------
 
 S3Title = "One at a time"
-S3Detail = "Kill all five Bangers with at least one Stinger still flying."
-S3Intro = "Five Bangers in a line, 45 apart. Each one covers 40 around it."
+S3Story = "Commander, a second wave is coming for the town: heavy tanks behind a line of flak."
+S3Detail = "Destroy all five Bangers and the four Rhinos before half the town is lost, with at least one Stinger still flying."
+S3Intro = "Five Bangers in a line, 25 apart, each covering 40 around it. The Rhinos behind them cannot shoot at aircraft."
 
 S3Hint1 = "Attack a Banger inside the line and its neighbours shoot at you too. Attack an end one from the outside and only one can."
-S3Hint2 = "Fly around to the far side of an end Banger. From there the next one is 67 away, out of its 40."
+S3Hint2 = "Fly around to the far side of an end Banger. From there the next one is 47 away, just out of its 40."
 S3Hint3 = "When the first one dies, the next is alone on that side. Repeat."
 
-S3Done = "Five Bangers, and never more than one shooting at you."
+S3Done = "Five Bangers, never more than one shooting at you, and the tanks after them. The town is safe."
 S3Failed = "Every Stinger lost. Take the Bangers from the ends, never from the middle."
+S3TownLost = "The town has fallen. Break the line from one end faster, then turn on the Rhinos."
 
 -- Between stages ------------------------------------------------------------
 

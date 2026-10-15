@@ -2,9 +2,9 @@
 --[[  FAF Lesson: Gunships against flak                                        ]]--
 --[[                                                                           ]]--
 --[[  Hand written, not editor generated, so it stays short enough to read.    ]]--
---[[  There are no units here: every Stinger, Banger and Mantis is created by  ]]--
---[[  the script at GetTerrainHeight, because a stage that can be tried again  ]]--
---[[  has to be able to put its units back, and because the terrain is         ]]--
+--[[  There are no units here: every Stinger, Banger, tank and house is made   ]]--
+--[[  by the script at GetTerrainHeight, because a stage that can be tried     ]]--
+--[[  again has to be able to put its units back, and because the terrain is   ]]--
 --[[  borrowed and its heights are not this file's to know.                    ]]--
 --[[                                                                           ]]--
 
@@ -48,7 +48,7 @@ Scenario = {
     Platoons = {
     },
 
-    next_army_id = '2',
+    next_army_id = '3',
     next_group_id = '3',
     next_unit_id = '1',
 
@@ -67,6 +67,7 @@ Scenario = {
             },
             Alliances = {
                 ['Flak'] = 'Enemy',
+                ['Civilians'] = 'Ally',
             },
             ['Units'] = GROUP {
                 orders = '',
@@ -103,6 +104,43 @@ Scenario = {
             },
             Alliances = {
                 ['Player1'] = 'Enemy',
+                ['Civilians'] = 'Enemy',
+            },
+            ['Units'] = GROUP {
+                orders = '',
+                platoon = '',
+                Units = {
+                    ['INITIAL'] = GROUP {
+                        orders = '',
+                        platoon = '',
+                        Units = {
+                        },
+                    },
+                },
+            },
+            PlatoonBuilders = {
+                next_platoon_builder_id = '0',
+                Builders = {
+                },
+            },
+        },
+
+        --[[  The town stages 2 and 3 defend. UEF (faction 0), allied to the   ]]--
+        --[[  player and an enemy of the Flak army, so its tanks shoot the     ]]--
+        --[[  houses. Nothing here moves or builds.                            ]]--
+        ['Civilians'] =
+        {
+            personality = '',
+            plans = '/lua/ai/opai/defaultblankplanlist.lua',
+            color = 0,
+            faction = 0,
+            Economy = {
+                mass = 0,
+                energy = 0,
+            },
+            Alliances = {
+                ['Player1'] = 'Ally',
+                ['Flak'] = 'Enemy',
             },
             ['Units'] = GROUP {
                 orders = '',
