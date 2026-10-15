@@ -65,8 +65,10 @@ Rules that save a debugging session:
   The game never opens it.
 - **Every number the lesson states is read off a unit blueprint.** A lesson that
   says "range 40" when the unit has 38 teaches the wrong thing.
-- **Measure the habit, not the outcome.** Twelve gunships kill three Bangers
-  however they are flown, so that stage measures health brought home.
+- **Pass on what the player can see.** A stage is passed when its targets die
+  and at least one of the player's units is left. A hidden mark such as health
+  brought home or units kept reads as arbitrary from inside the game; a rule
+  the habit itself needs (the escort left standing in "Flak first") can stay.
 - **Never dead-end.** A failed stage offers a retry or the next stage.
 - **Write the result line before anything else in the debrief**, so a player
   who closes the game during the last words still has the run recorded.

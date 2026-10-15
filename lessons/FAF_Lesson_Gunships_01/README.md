@@ -3,11 +3,14 @@
 Twelve UEF Stingers against Cybran Bangers on Blasted Rock, in three stages.
 Roughly ten minutes end to end.
 
-| Stage | Habit | How it is measured |
+| Stage | Habit | Passed when |
 | --- | --- | --- |
-| 1 Spread out | Split the gunships before going in | Three Bangers side by side die and the Stingers finish with at least 60% of their total health |
-| 2 Flak first | Attack the flak, not its escort | The same three Bangers, four Mantis around each: they die while at least 9 of the 12 Mantis still stand, and 7 of 12 Stingers live |
-| 3 One at a time | Work a flak line from its ends | Five Bangers 45 apart die and 7 of 12 Stingers live |
+| 1 Spread out | Split the gunships before going in | Three Bangers side by side die and at least one Stinger is left |
+| 2 Flak first | Attack the flak, not its escort | The same three Bangers, four Mantis around each, die while at least 9 of the 12 Mantis still stand and at least one Stinger is left |
+| 3 One at a time | Work a flak line from its ends | Five Bangers 45 apart die and at least one Stinger is left |
+
+A stage's units stay on the field for two seconds after its verdict. The
+Stingers of the next one start about 100 from the flak.
 
 At the end a board lists every stage (passed, passed on which try, or missed),
 the stages passed and the time, with a button that closes the game and one that
@@ -21,12 +24,12 @@ seconds.
 ## Still to playtest
 
 The first playtest, with one Banger in stage 1 and 2 and three in stage 3,
-found the lesson far too easy. The flak was raised to three, three and five;
-the pass marks moved with it, and are a guess again. They live in the `TUNING`
-table at the top of `_script.lua`:
+found the lesson far too easy. The flak was raised to three, three and five.
+The second found the pause between stages too long and the health and
+Stingers-kept marks the wrong measure: a stage now asks for one Stinger left,
+nothing hidden. Still open, in the `TUNING` table at the top of `_script.lua`:
 
-- whether a ball of twelve comes home under 60% against three Bangers in stage
-  1, and a three-way split above it;
-- whether 7 of 12 in stage 2 is fair once the attack orders are on the Bangers;
-- whether 7 of 12 in stage 3 leaves room for five fights worked from the ends,
-  and none for a line attacked from the inside.
+- whether 9 of 12 Mantis standing in stage 2 tells a player who aimed at the
+  flak from one who attack-moved;
+- whether three and five Bangers are enough to lose to when a stage is flown
+  badly, now that one Stinger left is a pass.
