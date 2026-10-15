@@ -4,28 +4,26 @@
 -- Three stages, one habit each, in the order they build on each other:
 --
 --   Stage 1  Spread out       three Bangers side by side, twelve Stingers.
---                             Measured by how much health comes home: the
---                             Stingers win either way, and the difference
---                             between a ball and a spread is entirely in the
---                             damage taken.
 --   Stage 2  Flak first       the same three Bangers, each inside four Mantis.
---                             Measured by the escort still standing when the
---                             last Banger dies, which is the habit itself: a
+--                             Also failed when the Stingers kill the escort
+--                             before the flak, which is the habit itself: a
 --                             player who attack-moves kills tanks first,
 --                             every time.
---   Stage 3  One at a time    five Bangers in a line, 45 apart. Measured by
---                             Stingers lost. From the outer side of an end
---                             Banger the next one is 67 away, out of its 40,
---                             so a player who works the line from the ends
---                             only ever fights one Banger.
+--   Stage 3  One at a time    five Bangers in a line, 45 apart. From the
+--                             outer side of an end Banger the next one is 67
+--                             away, out of its 40, so a player who works the
+--                             line from the ends only ever fights one Banger.
+--
+-- Every stage is passed when its Bangers are dead and at least one Stinger is
+-- still flying. No hidden mark (health brought home, Stingers kept): what the
+-- player sees on the field is the whole verdict.
 --
 -- Shaped like the reclaim lesson rather than like a co-op mission: it states
--- its arithmetic out loud and every number is real (see the strings file), it
--- measures the habit rather than the outcome, and it never dead ends. A failed
--- stage offers a retry or the next stage, because a player who has to relaunch
--- the game to retry a ninety second drill will not retry it. The end is a board
--- with every stage's result and a button that closes the game, or one that
--- plays the lesson again.
+-- its arithmetic out loud and every number is real (see the strings file), and
+-- it never dead ends. A failed stage offers a retry or the next stage, because
+-- a player who has to relaunch the game to retry a ninety second drill will
+-- not retry it. The end is a board with every stage's result and a button that
+-- closes the game, or one that plays the lesson again.
 --
 -- The client reads one line from the game log when the game exits:
 --
@@ -63,34 +61,30 @@ local MANTIS = 'url0107'    -- Cybran T1 tank, which cannot shoot at aircraft
 
 --- Everything a playtest is allowed to move.
 ---
---- The ranges and damage the strings quote are blueprint truth. The pass marks
---- below are not: they are a first guess at the line between a player who did
---- the thing and one who did not, and they need a playtest to confirm.
+--- The ranges and damage the strings quote are blueprint truth. The escort
+--- mark is not: it is a first guess at the line between a player who aimed at
+--- the flak and one who did not, and it needs a playtest to confirm.
 local TUNING = {
     Gunships = 12,
-    -- Twelve Stingers fire 640 a second together, so three Bangers (3000
-    -- health) take about five seconds to kill, plus the second it takes to
-    -- close from 40 to 22. That is around twenty shells. Into a ball each one
-    -- lands on several Stingers and the ball comes home with little left;
-    -- spread into three groups, a shell reaches four at most.
-    Stage1Health = 0.6,
-    Stage2Keep = 7,
     -- Of twelve Mantis, four around each Banger.
     Stage2EscortStanding = 9,
-    -- Five fights against one Banger each, worked from the ends.
-    Stage3Keep = 7,
     HintFirstDelay = 20,
     HintRepeatDelay = 30,
-    -- How long a stage's last words stay up before the next one starts.
-    Pause = 6,
+    -- How long a stage's units stay on the field after its verdict, so the
+    -- player sees what happened. Long enough to read one line, no longer:
+    -- six seconds of nothing between two ninety second drills felt like
+    -- waiting.
+    Pause = 2,
 }
 
 --- Where things stand. x and z only: every unit is created at
 --- GetTerrainHeight, because the terrain is borrowed.
 local LAYOUT = {
-    -- The Stingers' rally point, south of the middle and about 100 from every
-    -- Banger, so a stage starts outside every Banger's 40.
-    Gunships = {128, 215},
+    -- The Stingers' rally point, south of the middle. The front row starts
+    -- about 57 from the nearest Banger: outside its 40 with room to split
+    -- up, and three seconds' flight from their own 22, where it used to be
+    -- six.
+    Gunships = {128, 180},
     -- A triangle about 18 a side: every Banger covers the other two, so the
     -- three of them are one flak position with three times the fire.
     Stage1 = { Bangers = { {128, 108}, {119, 124}, {137, 124} } },
@@ -160,22 +154,6 @@ local function Alive(units)
         end
     end
     return count
-end
-
---- Health still flying, as a share of what took off. A dead Stinger counts as
---- nothing left, which is what it is.
-local function HealthShare(units)
-    local left, full = 0, 0
-    for _, unit in units do
-        full = full + unit:GetBlueprint().Defense.MaxHealth
-        if not unit.Dead then
-            left = left + unit:GetHealth()
-        end
-    end
-    if full == 0 then
-        return 0
-    end
-    return left / full
 end
 
 local function Remove(units)
@@ -275,10 +253,7 @@ local Stage1 = {
                 return false, OpStrings.S1Wiped
             end
             if Alive(bangers) == 0 then
-                if HealthShare(gunships) >= TUNING.Stage1Health then
-                    return true, OpStrings.S1Done
-                end
-                return false, OpStrings.S1Failed
+                return true, OpStrings.S1Done
             end
         end)
 
@@ -306,7 +281,7 @@ local Stage2 = {
             if Alive(escort) < TUNING.Stage2EscortStanding then
                 return false, OpStrings.S2FailedTanks
             end
-            if Alive(gunships) < TUNING.Stage2Keep then
+            if Alive(gunships) == 0 then
                 return false, OpStrings.S2FailedLosses
             end
             if Alive(bangers) == 0 then
@@ -331,7 +306,7 @@ local Stage3 = {
         StartHints(hints, {OpStrings.S3Hint1, OpStrings.S3Hint2, OpStrings.S3Hint3})
 
         local passed, line = Watch(function()
-            if Alive(gunships) < TUNING.Stage3Keep then
+            if Alive(gunships) == 0 then
                 return false, OpStrings.S3Failed
             end
             if Alive(bangers) == 0 then
