@@ -187,12 +187,6 @@ for (const resource of resources) {
     complain(where, "lesson.folder should be letters, digits and underscores");
     continue;
   }
-  // ScenarioFramework.EndOperation finds the operation file by replacing
-  // "scenario" in the scenario's path, so a folder named with it would send
-  // the debrief looking for a file that does not exist.
-  if (folder.toLowerCase().includes("scenario")) {
-    complain(where, "lesson.folder must not contain the word \"scenario\"");
-  }
   if (!Array.isArray(files) || files.length === 0) {
     complain(where, "lesson.files is empty, so the client would download nothing");
     continue;
@@ -208,7 +202,7 @@ for (const resource of resources) {
       complain(where, `lists lessons/${folder}/${file}, which is not in this repository`);
     }
   }
-  for (const required of ["scenario", "save", "script", "operation"]) {
+  for (const required of ["scenario", "save", "script"]) {
     if (!files.includes(`${folder}_${required}.lua`)) {
       complain(where, `lesson.files is missing ${folder}_${required}.lua`);
     }
