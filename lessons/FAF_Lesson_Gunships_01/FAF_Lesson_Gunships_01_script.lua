@@ -4,11 +4,16 @@
 -- Three stages, one habit each, in the order they build on each other:
 --
 --   Stage 1  Spread out       three Bangers side by side, twelve Stingers.
---   Stage 2  Flak first       the same three Bangers, each inside four Mantis,
+--   Stage 2  Flak first       the same three Bangers, each inside four Hoplites,
 --                             marching on a UEF town. Also failed when the
 --                             Stingers kill the escort while a Banger still
 --                             lives, which is the habit itself: a player who
---                             attack-moves kills tanks first, every time.
+--                             attack-moves kills the escort first, every
+--                             time. Hoplites rather than Mantis: at 550
+--                             health against 270 they survive the stray
+--                             volley of a player who is flying from one
+--                             Banger to the next, so the rule catches
+--                             attack-moving and not bad luck.
 --   Stage 3  One at a time    five Bangers in a line, 25 apart, advancing on
 --                             the town with four Rhinos behind them. From the
 --                             outer side of an end Banger the next one is 47
@@ -62,7 +67,7 @@ local Civilians = ScenarioInfo.Civilians
 
 local GUNSHIP = 'uea0203'   -- UEF Stinger
 local BANGER = 'url0205'    -- Cybran mobile flak
-local MANTIS = 'url0107'    -- Cybran T1 tank, which cannot shoot at aircraft
+local HOPLITE = 'drl0204'   -- Cybran T2 rocket bot, ground only, 550 health
 local RHINO = 'url0202'     -- Cybran T2 heavy tank, ground only, as fast as a Banger
 
 --- Everything a playtest is allowed to move.
@@ -72,7 +77,7 @@ local RHINO = 'url0202'     -- Cybran T2 heavy tank, ground only, as fast as a B
 --- the flak and one who did not, and it needs a playtest to confirm.
 local TUNING = {
     Gunships = 12,
-    -- Of twelve Mantis, four around each Banger.
+    -- Of twelve Hoplites, four around each Banger.
     Stage2EscortStanding = 9,
     -- Buildings of the six that must still stand: losing half the town is
     -- losing the stage.
@@ -95,7 +100,7 @@ local LAYOUT = {
     -- A triangle about 18 a side: every Banger covers the other two, so the
     -- three of them are one flak position with three times the fire.
     Stage1 = { Bangers = { {128, 108}, {119, 124}, {137, 124} } },
-    -- Stage 1's triangle, each Banger in its own ring of Mantis. Every
+    -- Stage 1's triangle, each Banger in its own ring of Hoplites. Every
     -- Banger and its ring march as one formation, so the escort stays
     -- between the flak and anything coming at it.
     Stage2 = { Bangers = { {128, 108}, {119, 124}, {137, 124} }, EscortRadius = 6, EscortPerBanger = 4 },
@@ -156,7 +161,7 @@ local function SpawnBangers(positions)
     return units
 end
 
---- Each Banger with its own ring of Mantis, facing outwards, as one group per
+--- Each Banger with its own ring of Hoplites, facing outwards, as one group per
 --- Banger with the Banger first.
 local function SpawnColumns(centers, radius, perCenter)
     local columns = {}
@@ -166,7 +171,7 @@ local function SpawnColumns(centers, radius, perCenter)
             local angle = (i - 1) * 2 * math.pi / perCenter
             local x = center[1] + math.cos(angle) * radius
             local z = center[2] + math.sin(angle) * radius
-            table.insert(column, CreateAt(MANTIS, 'Flak', x, z, 0, angle))
+            table.insert(column, CreateAt(HOPLITE, 'Flak', x, z, 0, angle))
         end
         table.insert(columns, column)
     end
@@ -320,7 +325,7 @@ local Stage2 = {
                     table.insert(escort, unit)
                 end
             end
-            -- Attack-move: the Mantis open fire on the houses the moment
+            -- Attack-move: the Hoplites open fire on the houses the moment
             -- they are in range. 0 degrees faces south, towards the town.
             IssueFormAggressiveMove(group, TownPosition(), 'AttackFormation', 0)
         end
@@ -330,9 +335,9 @@ local Stage2 = {
 
         local passed, line = Watch(function()
             -- Order matters: the escort check comes first, so a player who
-            -- kills a tank and the last Banger in the same half second is
-            -- judged on the tanks, which is the habit being measured. Once
-            -- the flak is gone the tanks are fair game.
+            -- kills a Hoplite and the last Banger in the same half second is
+            -- judged on the escort, which is the habit being measured. Once
+            -- the flak is gone the escort is fair game.
             if Alive(bangers) > 0 and Alive(escort) < TUNING.Stage2EscortStanding then
                 return false, OpStrings.S2FailedTanks
             end

@@ -9,8 +9,8 @@
 -- Every number is read off the unit blueprints. The Banger (url0205): 1000
 -- health, range 40, one 90 damage shell every 0.6 seconds that hurts
 -- everything within 4 of where it lands. The Stinger (uea0203): 700 health,
--- range 22. The Rhino (url0202): ground only. If a balance patch moves one of
--- them, this file has to follow.
+-- range 22. The Rhino (url0202) and the Hoplite (drl0204): ground only. If a
+-- balance patch moves one of them, this file has to follow.
 --
 
 -- Intro ---------------------------------------------------------------------
@@ -35,14 +35,14 @@ S1Wiped = "Every Stinger lost. Split them into groups before you go in."
 
 S2Title = "Flak first"
 S2Story = "Commander, the town behind you is under attack. We could spare twelve Stingers: keep those civilians alive."
-S2Detail = "Destroy the column before half the town is lost. While a Banger lives, keep at least 9 of the 12 Mantis standing."
-S2Intro = "Three Bangers march with the column, each inside a ring of Mantis tanks. The tanks cannot shoot at aircraft. The Bangers can."
+S2Detail = "Destroy the column before half the town is lost. While a Banger lives, keep at least 9 of the 12 Hoplites standing."
+S2Intro = "Three Bangers march with the column, each inside a ring of Hoplite rocket bots. The Hoplites cannot shoot at aircraft. The Bangers can."
 
-S2Hint1 = "Attack-move picks the nearest target, and the nearest target is a tank. Give a direct attack order on a Banger."
+S2Hint1 = "Attack-move picks the nearest target, and the nearest target is a Hoplite. Give a direct attack order on a Banger."
 S2Hint2 = "Select the Stingers and right-click on a Banger itself, not on the ground next to it."
 
-S2Done = "Bangers first, tanks after. The column is gone and the town still stands."
-S2FailedTanks = "You were shooting the escort. Every second spent on a tank was a second the Bangers kept firing."
+S2Done = "Bangers first, Hoplites after. The column is gone and the town still stands."
+S2FailedTanks = "You were shooting the escort. Every second spent on a Hoplite was a second the Bangers kept firing."
 S2FailedLosses = "Every Stinger lost. Put the attack order on the Bangers themselves."
 S2TownLost = "The town has fallen. Every second on the wrong target was a second the column kept walking."
 
