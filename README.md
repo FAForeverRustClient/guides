@@ -105,11 +105,16 @@ document), which is right for a player and wrong here.
 ```
 catalogue.json    the manifest the client reads
 guides/           long-form guides, one Markdown file each
+lessons/          playable lessons, one map folder each
 ```
 
 A guide written in the client is committed to `guides/<id>.md` when it is
 accepted, and its catalogue entry points at the raw address of that file. A
 guide that lives on YouTube or the wiki is just a `url` and no file.
+
+A lesson is a scripted map the client downloads and starts from the Training
+tab. How to write one, and what the client expects of it, is in
+[`lessons/README.md`](lessons/README.md).
 
 ## Format
 
