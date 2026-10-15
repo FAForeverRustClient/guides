@@ -4,19 +4,22 @@
 -- Three stages, one habit each, in the order they build on each other:
 --
 --   Stage 1  Spread out       three Bangers side by side, twelve Stingers.
---   Stage 2  Flak first       the same three Bangers, each inside four Mantis.
---                             Also failed when the Stingers kill the escort
---                             before the flak, which is the habit itself: a
---                             player who attack-moves kills tanks first,
---                             every time.
---   Stage 3  One at a time    five Bangers in a line, 45 apart. From the
---                             outer side of an end Banger the next one is 67
+--   Stage 2  Flak first       the same three Bangers, each inside four Mantis,
+--                             marching on a UEF town. Also failed when the
+--                             Stingers kill the escort while a Banger still
+--                             lives, which is the habit itself: a player who
+--                             attack-moves kills tanks first, every time.
+--   Stage 3  One at a time    five Bangers in a line, 25 apart, advancing on
+--                             the town with four Rhinos behind them. From the
+--                             outer side of an end Banger the next one is 47
 --                             away, out of its 40, so a player who works the
 --                             line from the ends only ever fights one Banger.
 --
--- Every stage is passed when its Bangers are dead and at least one Stinger is
--- still flying. No hidden mark (health brought home, Stingers kept): what the
--- player sees on the field is the whole verdict.
+-- Stage 1 is passed when its Bangers are dead and at least one Stinger is
+-- still flying. Stages 2 and 3 tell a story: the column is attacking a town,
+-- so they are passed when the whole column is dead, at least one Stinger is
+-- left and the town still stands. No hidden mark (health brought home,
+-- Stingers kept): what the player sees on the field is the whole verdict.
 --
 -- Shaped like the reclaim lesson rather than like a co-op mission: it states
 -- its arithmetic out loud and every number is real (see the strings file), and
@@ -48,16 +51,19 @@ local LESSON = 'FAF_Lesson_Gunships_01'
 ----------
 ScenarioInfo.Player1 = 1
 ScenarioInfo.Flak = 2
+ScenarioInfo.Civilians = 3
 
 ---------
 -- Locals
 ---------
 local Player1 = ScenarioInfo.Player1
 local Flak = ScenarioInfo.Flak
+local Civilians = ScenarioInfo.Civilians
 
 local GUNSHIP = 'uea0203'   -- UEF Stinger
 local BANGER = 'url0205'    -- Cybran mobile flak
 local MANTIS = 'url0107'    -- Cybran T1 tank, which cannot shoot at aircraft
+local RHINO = 'url0202'     -- Cybran T2 heavy tank, ground only, as fast as a Banger
 
 --- Everything a playtest is allowed to move.
 ---
@@ -68,6 +74,9 @@ local TUNING = {
     Gunships = 12,
     -- Of twelve Mantis, four around each Banger.
     Stage2EscortStanding = 9,
+    -- Buildings of the six that must still stand: losing half the town is
+    -- losing the stage.
+    TownStanding = 4,
     HintFirstDelay = 20,
     HintRepeatDelay = 30,
     -- How long a stage's units stay on the field after its verdict, so the
@@ -86,11 +95,28 @@ local LAYOUT = {
     -- A triangle about 18 a side: every Banger covers the other two, so the
     -- three of them are one flak position with three times the fire.
     Stage1 = { Bangers = { {128, 108}, {119, 124}, {137, 124} } },
-    -- Stage 1's triangle, each Banger in its own ring of Mantis.
+    -- Stage 1's triangle, each Banger in its own ring of Mantis. Every
+    -- Banger and its ring march as one formation, so the escort stays
+    -- between the flak and anything coming at it.
     Stage2 = { Bangers = { {128, 108}, {119, 124}, {137, 124} }, EscortRadius = 6, EscortPerBanger = 4 },
-    -- 45 apart: attacking one inside the line puts a Stinger within 23 of both
-    -- neighbours, attacking an end from outside puts it 67 from the next one.
-    Stage3 = { Bangers = { {38, 118}, {83, 118}, {128, 118}, {173, 118}, {218, 118} } },
+    -- 25 apart: a Stinger 22 from a Banger inside the line is at most 47 from
+    -- each neighbour and usually well inside their 40, while one on the outer
+    -- side of an end Banger is 47 from the next, with only 7 to spare. The
+    -- line moves straight south to Halt and stops there; every Banger moves
+    -- at the same speed, so it stays a line. The Rhinos follow in the gaps,
+    -- 15 behind.
+    Stage3 = {
+        Bangers = { {78, 118}, {103, 118}, {128, 118}, {153, 118}, {178, 118} },
+        Halt = 200,
+        Rhinos = { {90.5, 103}, {115.5, 103}, {140.5, 103}, {165.5, 103} },
+    },
+    -- The town the column marches on, behind the Stingers' rally point: six
+    -- UEF civilian buildings in two rows.
+    Town = {
+        { 'uec1101', 113, 232 }, { 'uec1201', 128, 232 }, { 'uec1301', 143, 232 },
+        { 'uec1401', 113, 246 }, { 'uec1501', 128, 246 }, { 'uec1101', 143, 246 },
+    },
+    TownCenter = {128, 239},
     -- What the player is shown of the stage, around its middle: wide enough
     -- for the outer side of both ends of stage 3's line.
     VisionCenter = {128, 118},
@@ -130,18 +156,34 @@ local function SpawnBangers(positions)
     return units
 end
 
---- A ring of Mantis around every point, facing outwards, as one list.
-local function SpawnEscort(centers, radius, perCenter)
-    local units = {}
+--- Each Banger with its own ring of Mantis, facing outwards, as one group per
+--- Banger with the Banger first.
+local function SpawnColumns(centers, radius, perCenter)
+    local columns = {}
     for _, center in centers do
+        local column = {CreateAt(BANGER, 'Flak', center[1], center[2])}
         for i = 1, perCenter do
             local angle = (i - 1) * 2 * math.pi / perCenter
             local x = center[1] + math.cos(angle) * radius
             local z = center[2] + math.sin(angle) * radius
-            table.insert(units, CreateAt(MANTIS, 'Flak', x, z, 0, angle))
+            table.insert(column, CreateAt(MANTIS, 'Flak', x, z, 0, angle))
         end
+        table.insert(columns, column)
+    end
+    return columns
+end
+
+local function SpawnTown()
+    local units = {}
+    for _, building in LAYOUT.Town do
+        table.insert(units, CreateAt(building[1], 'Civilians', building[2], building[3]))
     end
     return units
+end
+
+local function TownPosition()
+    local x, z = LAYOUT.TownCenter[1], LAYOUT.TownCenter[2]
+    return {x, GetTerrainHeight(x, z), z}
 end
 
 local function Alive(units)
@@ -263,43 +305,85 @@ local Stage1 = {
 
 local Stage2 = {
     Title = OpStrings.S2Title,
+    Story = OpStrings.S2Story,
     Intro = OpStrings.S2Intro,
     Attempt = function(attempt)
+        local town = SpawnTown()
         local gunships = SpawnGunships()
-        local bangers = SpawnBangers(LAYOUT.Stage2.Bangers)
-        local escort = SpawnEscort(LAYOUT.Stage2.Bangers, LAYOUT.Stage2.EscortRadius, LAYOUT.Stage2.EscortPerBanger)
-        local objective = StageObjective(OpStrings.S2Title, OpStrings.S2Detail, attempt, bangers)
+        local columns = SpawnColumns(LAYOUT.Stage2.Bangers, LAYOUT.Stage2.EscortRadius, LAYOUT.Stage2.EscortPerBanger)
+        local bangers, escort, column = {}, {}, {}
+        for _, group in columns do
+            table.insert(bangers, group[1])
+            for index, unit in group do
+                table.insert(column, unit)
+                if index > 1 then
+                    table.insert(escort, unit)
+                end
+            end
+            -- Attack-move: the Mantis open fire on the houses the moment
+            -- they are in range. 0 degrees faces south, towards the town.
+            IssueFormAggressiveMove(group, TownPosition(), 'AttackFormation', 0)
+        end
+        local objective = StageObjective(OpStrings.S2Title, OpStrings.S2Detail, attempt, column)
         local hints = {}
         StartHints(hints, {OpStrings.S2Hint1, OpStrings.S2Hint2})
 
         local passed, line = Watch(function()
             -- Order matters: the escort check comes first, so a player who
             -- kills a tank and the last Banger in the same half second is
-            -- judged on the tanks, which is the habit being measured.
-            if Alive(escort) < TUNING.Stage2EscortStanding then
+            -- judged on the tanks, which is the habit being measured. Once
+            -- the flak is gone the tanks are fair game.
+            if Alive(bangers) > 0 and Alive(escort) < TUNING.Stage2EscortStanding then
                 return false, OpStrings.S2FailedTanks
             end
             if Alive(gunships) == 0 then
                 return false, OpStrings.S2FailedLosses
             end
-            if Alive(bangers) == 0 then
+            if Alive(town) < TUNING.TownStanding then
+                return false, OpStrings.S2TownLost
+            end
+            if Alive(column) == 0 then
                 return true, OpStrings.S2Done
             end
         end)
 
         hints.done = true
         objective:ManualResult(passed)
-        return passed, line, {gunships, bangers, escort}
+        return passed, line, {gunships, column, town}
     end,
 }
 
 local Stage3 = {
     Title = OpStrings.S3Title,
+    Story = OpStrings.S3Story,
     Intro = OpStrings.S3Intro,
     Attempt = function(attempt)
+        local town = SpawnTown()
         local gunships = SpawnGunships()
         local bangers = SpawnBangers(LAYOUT.Stage3.Bangers)
-        local objective = StageObjective(OpStrings.S3Title, OpStrings.S3Detail, attempt, bangers)
+        local rhinos = {}
+        for _, position in LAYOUT.Stage3.Rhinos do
+            table.insert(rhinos, CreateAt(RHINO, 'Flak', position[1], position[2]))
+        end
+
+        -- Every Banger straight south at the same speed, so the line keeps
+        -- its spacing; a formation move would bunch it up. The Rhinos
+        -- attack-move on the town and shoot the houses once in range.
+        local halt = LAYOUT.Stage3.Halt
+        for _, banger in bangers do
+            local x = banger:GetPosition()[1]
+            IssueMove({banger}, {x, GetTerrainHeight(x, halt), halt})
+        end
+        IssueFormAggressiveMove(rhinos, TownPosition(), 'AttackFormation', 0)
+
+        local column = {}
+        for _, unit in bangers do
+            table.insert(column, unit)
+        end
+        for _, unit in rhinos do
+            table.insert(column, unit)
+        end
+        local objective = StageObjective(OpStrings.S3Title, OpStrings.S3Detail, attempt, column)
         local hints = {}
         StartHints(hints, {OpStrings.S3Hint1, OpStrings.S3Hint2, OpStrings.S3Hint3})
 
@@ -307,14 +391,17 @@ local Stage3 = {
             if Alive(gunships) == 0 then
                 return false, OpStrings.S3Failed
             end
-            if Alive(bangers) == 0 then
+            if Alive(town) < TUNING.TownStanding then
+                return false, OpStrings.S3TownLost
+            end
+            if Alive(column) == 0 then
                 return true, OpStrings.S3Done
             end
         end)
 
         hints.done = true
         objective:ManualResult(passed)
-        return passed, line, {gunships, bangers}
+        return passed, line, {gunships, column, town}
     end,
 }
 
@@ -334,6 +421,9 @@ local function PlayStage(stage, isLast)
     while true do
         tries = tries + 1
         stage.Attempts = (stage.Attempts or 0) + 1
+        if stage.Story then
+            Say(stage.Story)
+        end
         Say(stage.Intro)
         local passed, line, groups = stage.Attempt(stage.Attempts)
         Say(line)
@@ -368,6 +458,7 @@ function OnPopulate(scenario)
 
     ScenarioFramework.SetUEFPlayerColor(Player1)
     ScenarioFramework.SetCybranColor(Flak)
+    ScenarioFramework.SetUEFAllyColor(Civilians)
     ScenarioFramework.SetPlayableArea('AllMap', false)
 end
 
